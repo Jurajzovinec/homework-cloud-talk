@@ -37,7 +37,7 @@ query time.
 
 First row of input consists of 2 numbers, **N** - size of strawberry field,
 which is always a square of size N*N,
-and **Q** - numer of queries on input
+and **Q** - number of queries on input.
 Next **N** rows represent the strawberry field.
 After that, **Q** rows follow, each cosisting of 4 integers
 **a**, **b**, **c**, **d**, representing the part of field,
@@ -46,7 +46,7 @@ John wants to know the yield of.
 ### Constraints
 
 - **N** will be between 3 and 10_000, inclusive.
-- **Q** will be between 1 and 1_000_000, incluse.
+- **Q** will be between 1 and 1_000_000, inclusive.
 - **a**, **b**, **c**, **d** will be less than or equal to **N**.
 - **a** will be less than or equal to **c**
 - **b** will be less than or equal to **d**
