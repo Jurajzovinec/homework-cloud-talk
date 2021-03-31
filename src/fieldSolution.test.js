@@ -1,7 +1,6 @@
 const fieldSolution = require('./fieldSolution');
 const exampleValues = require('./exampleValues');
 
-
 test('Returns valid start index.', () => {
     expect(fieldSolution.startRangeAtFieldIndex(1, 1, exampleValues.fieldArea)).toBe(0);
     expect(fieldSolution.startRangeAtFieldIndex(1, 2, exampleValues.fieldArea)).toBe(7);

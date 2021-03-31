@@ -39,7 +39,7 @@ First row of input consists of 2 numbers, **N** - size of strawberry field,
 which is always a square of size N*N,
 and **Q** - number of queries on input.
 Next **N** rows represent the strawberry field.
-After that, **Q** rows follow, each cosisting of 4 integers
+After that, **Q** rows follow, each consisting of 4 integers
 **a**, **b**, **c**, **d**, representing the part of field,
 John wants to know the yield of.
 
