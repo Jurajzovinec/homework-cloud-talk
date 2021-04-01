@@ -1,5 +1,59 @@
-const fieldSolution = require('./fieldSolution');
-const exampleValues = require('./exampleValues');
+const FieldSolution = require('../classes/fieldSolutionClass');
+const exampleValues = require('../data/exampleValues');
+
+test('Test with example input and output.', () => {
+
+    expect(new FieldSolution(
+        exampleValues.exampleResults[0].queriedField,
+        exampleValues.yieldsOfPartsOfTheField).solution)
+        .toBe(exampleValues.exampleResults[0].resultOfYield);
+
+    expect(new FieldSolution(
+        exampleValues.exampleResults[1].queriedField,
+        exampleValues.yieldsOfPartsOfTheField).solution)
+        .toBe(exampleValues.exampleResults[1].resultOfYield);
+    
+    expect(new FieldSolution(
+        exampleValues.exampleResults[2].queriedField,
+        exampleValues.yieldsOfPartsOfTheField).solution)
+        .toBe(exampleValues.exampleResults[2].resultOfYield);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+test('Returns valid start index.', () => {
+    expect(new fieldSolutionClass.StartRangeAtFieldIndex(1, 1, exampleValues.fieldArea)).toBe(0);
+});
+*/
+
+/*
+const StopRangeAtFieldIndex = require('./fieldSolutionClass');
+const SumOfRange = require('./fieldSolutionClass');
+
+// console.log((new FieldSolution(exampleValues.exampleResults[0].queriedField, exampleValues.yieldsOfPartsOfTheField)));
 
 test('Returns valid start index.', () => {
     expect(fieldSolution.startRangeAtFieldIndex(1, 1, exampleValues.fieldArea)).toBe(0);
@@ -21,6 +75,4 @@ test('Returns correct sumUp of field yield.', () => {
     expect(fieldSolution.sumOfRange(exampleValues.exampleResults[2].queriedField, exampleValues.yieldsOfPartsOfTheField)).toBe(exampleValues.exampleResults[2].resultOfYield);
     expect(fieldSolution.sumOfRange([2, 7, 5, 7], exampleValues.yieldsOfPartsOfTheField)).toBe(20);
 });
-
-
-
+*/
