@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for classes/fieldSolutionClass.js</title>
+    <title>Code coverage report for classes/multipleQueries.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">classes</a> fieldSolutionClass.js</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">classes</a> multipleQueries.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>13/13</span>
+                <span class='fraction'>9/9</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/0</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>5/5</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>12/12</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
@@ -80,72 +80,51 @@
 <a name='L21'></a><a href='#L21'>21</a>
 <a name='L22'></a><a href='#L22'>22</a>
 <a name='L23'></a><a href='#L23'>23</a>
-<a name='L24'></a><a href='#L24'>24</a>
-<a name='L25'></a><a href='#L25'>25</a>
-<a name='L26'></a><a href='#L26'>26</a>
-<a name='L27'></a><a href='#L27'>27</a>
-<a name='L28'></a><a href='#L28'>28</a>
-<a name='L29'></a><a href='#L29'>29</a>
-<a name='L30'></a><a href='#L30'>30</a>
-<a name='L31'></a><a href='#L31'>31</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
+<a name='L24'></a><a href='#L24'>24</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">50x</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">14x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">2282089x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">class FieldSolution {
-    
-    constructor(queriedPartOfTheField, yieldsOfPartsOfTheField) {
-        this.yieldsOfPartsOfTheField = yieldsOfPartsOfTheField;
-        [this.startX, this.startY, this.endX, this.endY] = queriedPartOfTheField;
-        this.fieldArea = this.yieldsOfPartsOfTheField.length;
-        this.startPosition = this.calcStartRangeAtFieldIndex();
-        this.stopPosition = this.calcEndRangeAtFieldIndex();
-        this.solution = this.sumUpRange();
-    }
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const SingleQuery = require('./singleQuery');
 &nbsp;
-    sumUpRange() {     
-        const sumedUpRangeOfField = this.yieldsOfPartsOfTheField.slice(this.startPosition, this.stopPosition + 1);     
-        const reducer = (accumulator, currentValue) =&gt; accumulator + currentValue;
-        return sumedUpRangeOfField.reduce(reducer);
-    }
+class MultipleQueries {
 &nbsp;
-    calcStartRangeAtFieldIndex() {
-        return ((this.startX - 1) + (this.startY - 1) * Math.sqrt(this.fieldArea));
-    }
+    static generateQueries(nrOfQueries, fieldArea) {
 &nbsp;
-    calcEndRangeAtFieldIndex() {
-        return ((this.endX - 1) + (this.endY - 1) * Math.sqrt(this.fieldArea));
+        if (nrOfQueries &lt; 1 || nrOfQueries &gt; 1000000) {
+            throw new Error(`Invalid amount of queries length value. Choose amount from range of 1 to 1 000 000.`);
+        }
+&nbsp;
+        let queriesList = [];
+        for (let i = 0; i &lt; nrOfQueries; i++) {
+            queriesList.push(SingleQuery.generateQuery(fieldArea));
+        }
+        return queriesList;
     }
 }
 &nbsp;
-module.exports = FieldSolution;
+// const test = MultipleQueries.generateQueries(10000, 100000000);
+// console.log(test);
 &nbsp;
-&nbsp;
+module.exports = MultipleQueries;
 &nbsp;
 &nbsp;</pre></td></tr></table></pre>
 
@@ -154,7 +133,7 @@ module.exports = FieldSolution;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Fri Apr 02 2021 12:10:50 GMT+0200 (Central European Summer Time)
+                at Sat Apr 03 2021 12:51:12 GMT+0200 (Central European Summer Time)
             </div>
         </div>
         <script src="../prettify.js"></script>

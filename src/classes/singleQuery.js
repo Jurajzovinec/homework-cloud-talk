@@ -1,20 +1,25 @@
-class singleQuery{
-    
-    constructor(fieldArea){
-        this.constraintMultiplier = Math.sqrt(fieldArea);
-        this.startPosition = this.calcStartPosition();
-        this.endPosition = this.calcEndPosition();
-        this.query = this.startPosition.concat(this.endPosition);
-        this.length = this.query.length;
-    }
+class SingleQuery {
 
-    calcStartPosition(){
-        return Array(2).fill().map((_, i) => Math.ceil(Math.random() * this.constraintMultiplier));
-    }
+    static generateQuery(fieldArea) {
 
-    calcEndPosition(){
-        return Array(2).fill().map((_, i) => Math.floor(Math.random() * (this.constraintMultiplier - this.startPosition[i])) + this.startPosition[i]);
+        const constraintMultiplier = Math.sqrt(fieldArea);
+        const startPosition = calcStartPosition();
+        const endPosition = calcEndPosition();
+
+        function calcStartPosition() {
+            return Array(2).fill().map(() => Math.ceil(Math.random() * constraintMultiplier));
+        }
+
+        function calcEndPosition() {
+            return Array(2).fill().map((_, i) => Math.floor(Math.random() * (constraintMultiplier - startPosition[i])) + startPosition[i]);
+        }
+
+        return startPosition.concat(endPosition);
     }
 }
 
-module.exports = singleQuery;
+// const test = SingleQuery.generateQuery(49);
+// console.log(test);
+
+module.exports = SingleQuery;
+

@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for classes/fieldSolutionClass.js</title>
+    <title>Code coverage report for classes/fieldSolution.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">classes</a> fieldSolutionClass.js</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">classes</a> fieldSolution.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">7.69% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>13/13</span>
+                <span class='fraction'>1/13</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>5/5</span>
+                <span class='fraction'>0/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">8.33% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>12/12</span>
+                <span class='fraction'>1/12</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -90,26 +90,26 @@
 <a name='L31'></a><a href='#L31'>31</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">50x</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -119,27 +119,27 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">class FieldSolution {
     
-    constructor(queriedPartOfTheField, yieldsOfPartsOfTheField) {
-        this.yieldsOfPartsOfTheField = yieldsOfPartsOfTheField;
-        [this.startX, this.startY, this.endX, this.endY] = queriedPartOfTheField;
-        this.fieldArea = this.yieldsOfPartsOfTheField.length;
-        this.startPosition = this.calcStartRangeAtFieldIndex();
-        this.stopPosition = this.calcEndRangeAtFieldIndex();
-        this.solution = this.sumUpRange();
+<span class="fstat-no" title="function not covered" >    co</span>nstructor(queriedPartOfTheField, yieldsOfPartsOfTheField) {
+<span class="cstat-no" title="statement not covered" >        this.yieldsOfPartsOfTheField = yieldsOfPartsOfTheField;</span>
+<span class="cstat-no" title="statement not covered" >        [this.startX, this.startY, this.endX, this.endY] = queriedPartOfTheField;</span>
+<span class="cstat-no" title="statement not covered" >        this.fieldArea = this.yieldsOfPartsOfTheField.length;</span>
+<span class="cstat-no" title="statement not covered" >        this.startPosition = this.calcStartRangeAtFieldIndex();</span>
+<span class="cstat-no" title="statement not covered" >        this.stopPosition = this.calcEndRangeAtFieldIndex();</span>
+<span class="cstat-no" title="statement not covered" >        this.solution = this.sumUpRange();</span>
     }
 &nbsp;
-    sumUpRange() {     
-        const sumedUpRangeOfField = this.yieldsOfPartsOfTheField.slice(this.startPosition, this.stopPosition + 1);     
-        const reducer = (accumulator, currentValue) =&gt; accumulator + currentValue;
-        return sumedUpRangeOfField.reduce(reducer);
+<span class="fstat-no" title="function not covered" >    su</span>mUpRange() {     
+        const sumedUpRangeOfField = <span class="cstat-no" title="statement not covered" >this.yieldsOfPartsOfTheField.slice(this.startPosition, this.stopPosition + 1);</span>
+        const reducer = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(a</span>ccumulator, currentValue) =&gt; <span class="cstat-no" title="statement not covered" >accumulator + currentValue;</span></span>
+<span class="cstat-no" title="statement not covered" >        return sumedUpRangeOfField.reduce(reducer);</span>
     }
 &nbsp;
-    calcStartRangeAtFieldIndex() {
-        return ((this.startX - 1) + (this.startY - 1) * Math.sqrt(this.fieldArea));
+<span class="fstat-no" title="function not covered" >    ca</span>lcStartRangeAtFieldIndex() {
+<span class="cstat-no" title="statement not covered" >        return ((this.startX - 1) + (this.startY - 1) * Math.sqrt(this.fieldArea));</span>
     }
 &nbsp;
-    calcEndRangeAtFieldIndex() {
-        return ((this.endX - 1) + (this.endY - 1) * Math.sqrt(this.fieldArea));
+<span class="fstat-no" title="function not covered" >    ca</span>lcEndRangeAtFieldIndex() {
+<span class="cstat-no" title="statement not covered" >        return ((this.endX - 1) + (this.endY - 1) * Math.sqrt(this.fieldArea));</span>
     }
 }
 &nbsp;
@@ -154,7 +154,7 @@ module.exports = FieldSolution;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Fri Apr 02 2021 12:10:50 GMT+0200 (Central European Summer Time)
+                at Sat Apr 03 2021 10:50:22 GMT+0200 (Central European Summer Time)
             </div>
         </div>
         <script src="../prettify.js"></script>

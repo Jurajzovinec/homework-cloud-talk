@@ -6,8 +6,8 @@ class Field {
         this.desiredLengthOfField = this.validateConstraint(desiredLengthOfField);
         this.desiredAreaOfField = this.desiredLengthOfField * this.desiredLengthOfField;
         this.decimalField = Array.from({ length: 9 }, (_, i) => i + 1);
-        this.field = this.growField();
-        this.fieldArea = this.field.length;
+        this.field = this.generate2Dfield();
+        this.fieldArea = this.sumfieldArea();
     }
 
     validateConstraint(inputDesiredField) {
@@ -17,37 +17,42 @@ class Field {
         return inputDesiredField;
     }
 
-    growField() {
-
-        // approach for huge fields
-        if (this.desiredLengthOfField >= this.decimalField.length) {
-            const maxDecimalFieldInPeriodicRow = Math.floor(this.desiredLengthOfField / this.decimalField.length);
-            const maxPeriodicRow = [].concat(... new Array(maxDecimalFieldInPeriodicRow).fill(this.decimalField));
-            const maxOfPeriodicRow = (Math.floor(this.desiredAreaOfField / maxPeriodicRow.length));
-            this.field = new Array(maxOfPeriodicRow).fill(maxPeriodicRow);
-        }
-
-        // approach for small fields
-        if (this.desiredLengthOfField < this.decimalField.length) {
-            const maxDecimalFieldsInField = Math.floor(this.desiredAreaOfField / this.decimalField.length);
-            this.field = new Array(maxDecimalFieldsInField).fill(this.decimalField);
-        }
-
-        // Flatten the current array
-        this.field = [].concat.apply([], this.field);
-
-        if (Math.floor((this.desiredAreaOfField - this.field.length) / this.decimalField.length) > 0) {
-            const addDecFieldTimes = Math.floor((this.desiredAreaOfField - this.field.length) / this.decimalField.length);
-            let flattenedArrayToAdd = new Array(addDecFieldTimes).fill(this.decimalField);
-            flattenedArrayToAdd = [].concat.apply([], flattenedArrayToAdd);
-            this.field = this.field.concat(flattenedArrayToAdd);
-        }
-        
-        this.field = this.field.concat(this.decimalField.splice(0, this.desiredAreaOfField - this.field.length));
-
-        return this.field;
+    sumfieldArea() {
+        this.flatField = this.generateFlatField();
+        return this.flatField.length;
     }
 
+    generateFlatField(){
+        return [].concat.apply([], this.field);
+    }   
+
+    generate2Dfield() {
+        let startRowWithNumber = 1;
+        const longerRow = new Array((Math.floor(this.desiredLengthOfField / this.decimalField.length) + 2)).fill(this.decimalField).flat();
+        const matrix = new Array(this.desiredLengthOfField).fill().map(() => {
+            const startIndex = longerRow.findIndex((index) => index == startRowWithNumber);
+            const row = longerRow.slice(startIndex, startIndex + this.desiredLengthOfField);
+            startRowWithNumber = row.slice(-1)[0] + 1;
+            if (startRowWithNumber > 9) startRowWithNumber = 1;
+            return row;
+        });
+        return matrix;
+    }
+
+    generateIntegralImage() {
+        let integralImage = Array.from(Array(this.desiredLengthOfField), () => new Array(this.desiredLengthOfField));
+        let value;
+        for (let y = 0; y < this.desiredLengthOfField; ++y) {
+            for (let x = 0; x < this.desiredLengthOfField; ++x) {
+                value = this.field[x][y];
+                if (y > 0) value += integralImage[x][y - 1];
+                if (x > 0) value += integralImage[x - 1][y];
+                if (x > 0 && y > 0) value -= integralImage[x - 1][y - 1];
+                integralImage[x][y] = value;
+            }
+        }
+        return integralImage;
+    }
 }
 
 module.exports = Field;

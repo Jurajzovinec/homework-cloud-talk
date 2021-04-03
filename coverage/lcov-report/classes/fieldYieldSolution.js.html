@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for classes/fieldSolutionClass.js</title>
+    <title>Code coverage report for classes/fieldYieldSolution.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">classes</a> fieldSolutionClass.js</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">classes</a> fieldYieldSolution.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>13/13</span>
+                <span class='fraction'>19/19</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/0</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>5/5</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>12/12</span>
+                <span class='fraction'>19/19</span>
             </div>
         
             
@@ -87,29 +87,37 @@
 <a name='L28'></a><a href='#L28'>28</a>
 <a name='L29'></a><a href='#L29'>29</a>
 <a name='L30'></a><a href='#L30'>30</a>
-<a name='L31'></a><a href='#L31'>31</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">50x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -117,33 +125,37 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">class FieldSolution {
-    
-    constructor(queriedPartOfTheField, yieldsOfPartsOfTheField) {
-        this.yieldsOfPartsOfTheField = yieldsOfPartsOfTheField;
-        [this.startX, this.startY, this.endX, this.endY] = queriedPartOfTheField;
-        this.fieldArea = this.yieldsOfPartsOfTheField.length;
-        this.startPosition = this.calcStartRangeAtFieldIndex();
-        this.stopPosition = this.calcEndRangeAtFieldIndex();
-        this.solution = this.sumUpRange();
-    }
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">class FieldYieldSolution {
 &nbsp;
-    sumUpRange() {     
-        const sumedUpRangeOfField = this.yieldsOfPartsOfTheField.slice(this.startPosition, this.stopPosition + 1);     
-        const reducer = (accumulator, currentValue) =&gt; accumulator + currentValue;
-        return sumedUpRangeOfField.reduce(reducer);
-    }
+    static solveYield(queriedPartOfTheField, integralImageField) {
 &nbsp;
-    calcStartRangeAtFieldIndex() {
-        return ((this.startX - 1) + (this.startY - 1) * Math.sqrt(this.fieldArea));
-    }
-&nbsp;
-    calcEndRangeAtFieldIndex() {
-        return ((this.endX - 1) + (this.endY - 1) * Math.sqrt(this.fieldArea));
+        // implementation of Summed-area table algorithm
+        // more about this algorithm on ... https://en.wikipedia.org/wiki/Summed-area_table
+        
+        const rectPosX = queriedPartOfTheField[0]-1;
+        const rectPosY = queriedPartOfTheField[1]-1;
+        const endX = queriedPartOfTheField[2]-1;
+        const endY = queriedPartOfTheField[3]-1;
+        const rectWidth = endX - rectPosX + 1;
+        const rectHeight = endY - rectPosY + 1;
+        
+        let A = 0;
+        let B = 0;
+        let C = 0;
+        let D = 0;
+        
+        if (rectPosX &gt; 0 &amp;&amp; rectPosY &gt; 0)
+            A = integralImageField[rectPosX - 1][rectPosY - 1];
+        if (rectPosY &gt; 0)
+            B = integralImageField[rectPosX + rectWidth - 1][rectPosY - 1];
+        if (rectPosX &gt; 0)
+            C = integralImageField[rectPosX - 1][rectPosY + rectHeight - 1];
+        D = integralImageField[rectPosX + rectWidth - 1][rectPosY + rectHeight - 1];
+        return A - B - C + D;
     }
 }
 &nbsp;
-module.exports = FieldSolution;
+module.exports = FieldYieldSolution;
 &nbsp;
 &nbsp;
 &nbsp;
@@ -154,7 +166,7 @@ module.exports = FieldSolution;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Fri Apr 02 2021 12:10:50 GMT+0200 (Central European Summer Time)
+                at Sat Apr 03 2021 12:51:12 GMT+0200 (Central European Summer Time)
             </div>
         </div>
         <script src="../prettify.js"></script>
