@@ -1,7 +1,3 @@
-const lengthOfSquaredField = 7;
-
-const numberOfQueriesOnInput = 3;
-
 const yieldsOfPartsOfTheField = [
     [1, 2, 3, 4, 5, 6, 7],
     [8, 9, 1, 2, 3, 4, 5],
@@ -11,8 +7,6 @@ const yieldsOfPartsOfTheField = [
     [9, 1, 2, 3, 4, 5, 6],
     [7, 8, 9, 1, 2, 3, 4]
 ];
-
-const fieldArea = yieldsOfPartsOfTheField.length;
 
 const exampleResults = [
     {
@@ -34,9 +28,6 @@ const exampleResults = [
 ];
 
 module.exports = {
-    lengthOfSquaredField,
-    numberOfQueriesOnInput,
     yieldsOfPartsOfTheField,
-    fieldArea,
     exampleResults
 };
