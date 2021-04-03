@@ -20,7 +20,6 @@ test('Don not throw error due to correct input numerical value', () => {
     validFieldInputs.forEach((validFieldInput) => {
         expect(() => new Field(validFieldInput)).not.toThrow('Invalid field length value. Choose value from range of 3 to 10 000.');
     });
-
 });
 
 test('Check content of field values', () => {
