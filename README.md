@@ -124,11 +124,12 @@ Q = 10 000
 └─────────┴───────────────────────────────────┴──────────────────┴─────────────┘
 ```
 If you want to test this solution use run *main.js* and manipulate *strawberryFieldLength* and *amountOfQueries* input.
+
 Init app:
+
 1. Open project and move to src folder by typing *cd src* to terminal.
 2. Start main.js file by typing *node main* to terminal.
-Test app:
-1. Feel free to test app with Jest by typing *npm run test* to terminal.
+3. Feel free to test app with Jest by typing *npm run test* to terminal.
 
 ## Second task
 
