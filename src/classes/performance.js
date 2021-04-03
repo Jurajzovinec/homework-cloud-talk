@@ -49,19 +49,19 @@ class Performance {
   generateInformationObject() {
     return [
       {
-        task:"Generating integral Image",
-        quantityOfInputs: this.fieldLength,
-        elapsedTime:this.generatingFieldTime
-      }, 
-      {
-        task:"Generating list of queries",
-        quantityOfInputs: this.amountOfQueries,
-        elapsedTime:this.generatingQueriesTime
+        task: "Generating integral Image",
+        quantityOfInputs: this.fieldLength + ' [N]',
+        elapsedTime: this.generatingFieldTime + ' ms',
       },
       {
-        task:"Generating results from queries",
-        quantityOfInputs: this.amountOfQueries,
-        elapsedTime:this.generetingYieldsFromQueriesTime
+        task: "Generating list of queries",
+        quantityOfInputs: this.amountOfQueries + ' [Q]',
+        elapsedTime: this.generatingQueriesTime + ' ms',
+      },
+      {
+        task: "Generating results from queries",
+        quantityOfInputs: this.amountOfQueries + ' [Q]',
+        elapsedTime: this.generetingYieldsFromQueriesTime + ' ms',
       }
     ];
   }

@@ -87,6 +87,43 @@ The third query result is 9 since the yields in that part equal to 5, 3 and 1.
 
 Write your idea description along with time and memory complexity here.
 
+My solution is based on usage of *Summed-area table* algorithm.
+Computation consits of 3 main steps:
+1. Generating integral Image -> time complexity O(N^2)
+2. Generating list of queries -> time complexity O(N)
+3. Generating results from queries -> time complexity O(N)
+```text
+N = 100
+Q = 100
+┌─────────┬───────────────────────────────────┬──────────────────┬─────────────┐
+│ (index) │               task                │ quantityOfInputs │ elapsedTime │
+├─────────┼───────────────────────────────────┼──────────────────┼─────────────┤
+│    0    │    'Generating integral Image'    │    '100 [N]'     │   '7 ms'    │
+│    1    │   'Generating list of queries'    │    '100 [Q]'     │   '1 ms'    │
+│    2    │ 'Generating results from queries' │    '100 [Q]'     │   '0 ms'    │
+└─────────┴───────────────────────────────────┴──────────────────┴─────────────┘
+
+N = 1 000
+Q = 1 000
+┌─────────┬───────────────────────────────────┬──────────────────┬─────────────┐
+│ (index) │               task                │ quantityOfInputs │ elapsedTime │
+├─────────┼───────────────────────────────────┼──────────────────┼─────────────┤
+│    0    │    'Generating integral Image'    │    '1000 [N]'    │   '66 ms'   │
+│    1    │   'Generating list of queries'    │    '1000 [Q]'    │   '2 ms'    │
+│    2    │ 'Generating results from queries' │    '1000 [Q]'    │   '2 ms'    │
+└─────────┴───────────────────────────────────┴──────────────────┴─────────────┘
+
+N = 10 000
+Q = 10 000
+┌─────────┬───────────────────────────────────┬──────────────────┬─────────────┐
+│ (index) │               task                │ quantityOfInputs │ elapsedTime │
+├─────────┼───────────────────────────────────┼──────────────────┼─────────────┤
+│    0    │    'Generating integral Image'    │   '10000 [N]'    │ '22592 ms'  │
+│    1    │   'Generating list of queries'    │   '10000 [Q]'    │   '30 ms'   │
+│    2    │ 'Generating results from queries' │   '10000 [Q]'    │   '16 ms'   │
+└─────────┴───────────────────────────────────┴──────────────────┴─────────────┘
+```
+
 ## Second task
 
 After John successfully evaluated the different yields of his field,
