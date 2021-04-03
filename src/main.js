@@ -12,4 +12,3 @@ app.generateYieldsFromQueries();
 // console.log(app.generatedQueries);
 // console.log(app.generatedYieldsFromQueries);
 console.table(app.generateInformationObject());
-
