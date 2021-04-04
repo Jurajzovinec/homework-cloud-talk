@@ -169,8 +169,9 @@ Q = 10 000
 
 If you want to try out this solution run *main.js* and manipulate *strawberryFieldLength* and *amountOfQueries* input.
 
+**main.js**
+
 ```javascript
-*main.js*
 const strawberryFieldLength = 100; // N, lenght of field => Area = N*N
 const amountOfQueries = 100; // Q
 ```
