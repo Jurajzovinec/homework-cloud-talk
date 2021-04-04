@@ -88,6 +88,9 @@ The third query result is 9 since the yields in that part equal to 5, 3 and 1.
 Write your idea description along with time and memory complexity here.
 
 My solution is based on usage of *Summed-area table* algorithm.
+
+#### Time complexity
+
 Computation consits of 3 main steps:
 1. Generating integral Image -> time complexity O(N^2)
 2. Generating list of queries -> time complexity O(N)
@@ -122,7 +125,47 @@ Q = 10 000
 │    2    │ 'Generating results from queries' │   '10000 [Q]'    │   '16 ms'   │
 └─────────┴───────────────────────────────────┴──────────────────┴─────────────┘
 ```
-If you want to test this solution use run *main.js* and manipulate *strawberryFieldLength* and *amountOfQueries* input.
+#### Memory complexity
+
+Memory complexity has been test for whole process of the application, where memory usage is being measured at the end of the *main.js*. Based on tests, which results are shown below, we can assume space complexity grows linearly with growing number of inputs therefore we can say it is in O(N) notation.
+
+```text
+N = 100
+Q = 100
+┌─────────┬────────────────┬─────────────┐
+│ (index) │    whatUsed    │  usageInMb  │
+├─────────┼────────────────┼─────────────┤
+│    0    │     'rss'      │ '20.27 MB.' │
+│    1    │  'heapTotal'   │  '4.2 MB.'  │
+│    2    │   'heapUsed'   │ '3.93 MB.'  │
+│    3    │   'external'   │ '0.37 MB.'  │
+│    4    │ 'arrayBuffers' │ '0.01 MB.'  │
+└─────────┴────────────────┴─────────────┘
+N = 1 000
+Q = 1 000
+┌─────────┬────────────────┬─────────────┐
+│ (index) │    whatUsed    │  usageInMb  │
+├─────────┼────────────────┼─────────────┤
+│    0    │     'rss'      │ '57.94 MB.' │
+│    1    │  'heapTotal'   │ '57.08 MB.' │
+│    2    │   'heapUsed'   │ '27.05 MB.' │
+│    3    │   'external'   │ '0.37 MB.'  │
+│    4    │ 'arrayBuffers' │ '0.01 MB.'  │
+└─────────┴────────────────┴─────────────┘
+N = 10 000
+Q = 10 000
+┌─────────┬────────────────┬───────────────┐
+│ (index) │    whatUsed    │   usageInMb   │
+├─────────┼────────────────┼───────────────┤
+│    0    │     'rss'      │ '2385.41 MB.' │
+│    1    │  'heapTotal'   │ '2463.64 MB.' │
+│    2    │   'heapUsed'   │ '2301.35 MB.' │
+│    3    │   'external'   │  '0.37 MB.'   │
+│    4    │ 'arrayBuffers' │  '0.01 MB.'   │
+└─────────┴────────────────┴───────────────┘
+```
+
+If you want to try out this solution run *main.js* and manipulate *strawberryFieldLength* and *amountOfQueries* input.
 
 Init app:
 
