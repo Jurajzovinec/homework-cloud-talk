@@ -1,10 +1,11 @@
 const Performance = require('./classes/performance');
+const MemoryUsage = require('./classes/memoryUsage');
 
-const strawberryFieldLength = 10000; // N, lenght of field => Area = N*N
-const amountOfQueries = 10000; // Q
+const strawberryFieldLength = 1000; // N, lenght of field => Area = N*N
+const amountOfQueries = 1000; // Q
 
 const app = new Performance(strawberryFieldLength, amountOfQueries);
-app.generateField();
+app.generateIntegralImage();
 app.generateQueries();
 app.generateYieldsFromQueries();
 
@@ -12,3 +13,4 @@ app.generateYieldsFromQueries();
 // console.log(app.generatedQueries);
 // console.log(app.generatedYieldsFromQueries);
 console.table(app.generateInformationObject());
+console.table(MemoryUsage.buildMemoryUsageTable());

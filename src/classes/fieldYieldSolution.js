@@ -1,10 +1,8 @@
 class FieldYieldSolution {
 
     static solveYield(queriedPartOfTheField, integralImageField) {
-
         // implementation of Summed-area table algorithm
-        // more about this algorithm on ... https://en.wikipedia.org/wiki/Summed-area_table
-        
+        // more about this algorithm on ... https://en.wikipedia.org/wiki/Summed-area_table      
         const rectPosX = queriedPartOfTheField[0]-1;
         const rectPosY = queriedPartOfTheField[1]-1;
         const endX = queriedPartOfTheField[2]-1;

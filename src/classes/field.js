@@ -14,16 +14,16 @@ class Field {
         if (inputDesiredField < this.desiredAreaOfFieldLowerLimit || inputDesiredField > this.desiredAreaOfFieldUpperLimit) {
             throw new Error('Invalid field length value. Choose value from range of 3 to 10 000.');
         }
-        return inputDesiredField;
+        return inputDesiredField;    
     }
 
     sumfieldArea() {
         this.flatField = this.generateFlatField();
-        return this.flatField.length;
+        return this.flatField.length;    
     }
 
     generateFlatField(){
-        return [].concat.apply([], this.field);
+        return [].concat.apply([], this.field);   
     }   
 
     generate2Dfield() {
@@ -36,7 +36,7 @@ class Field {
             if (startRowWithNumber > 9) startRowWithNumber = 1;
             return row;
         });
-        return matrix;
+        return matrix;   
     }
 
     generateIntegralImage() {
@@ -53,6 +53,7 @@ class Field {
         }
         return integralImage;
     }
+    
 }
 
 module.exports = Field;

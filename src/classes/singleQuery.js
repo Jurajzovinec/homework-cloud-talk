@@ -18,8 +18,5 @@ class SingleQuery {
     }
 }
 
-// const test = SingleQuery.generateQuery(49);
-// console.log(test);
-
 module.exports = SingleQuery;
 

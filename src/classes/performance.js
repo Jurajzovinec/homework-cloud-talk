@@ -3,8 +3,8 @@ const MultipleQueries = require('./multipleQueries');
 const FieldYieldSolution = require('./fieldYieldSolution');
 
 class Performance {
-  constructor(fieldLength, amountOfQueries) {
 
+  constructor(fieldLength, amountOfQueries) {
     this.fieldLength = fieldLength;
     this.amountOfQueries = amountOfQueries;
 
@@ -12,38 +12,33 @@ class Performance {
     this.generatedQueries = undefined;
     this.generatedYieldsFromQueries = undefined;
 
-    this.generatingFieldTime = undefined;
+    this.generatingIntegralImageTime = undefined;
     this.generatingQueriesTime = undefined;
     this.generetingYieldsFromQueriesTime = undefined;
-
   }
-  generateField() {
 
+  generateIntegralImage() {
     const startTime = new Date();
-    this.generatedIntegralImage = new Field(this.fieldLength).generateIntegralImage();
-    const elapsedTime = new Date() - startTime;
-    this.generatingFieldTime = elapsedTime;
 
+    this.generatedIntegralImage = new Field(this.fieldLength).generateIntegralImage();
+    this.generatingIntegralImageTime = new Date() - startTime;
   }
 
   generateQueries() {
-
     const startTime = new Date();
-    this.generatedQueries = MultipleQueries.generateQueries(this.amountOfQueries, this.fieldLength * this.fieldLength);
-    const elapsedTime = new Date() - startTime;
-    this.generatingQueriesTime = elapsedTime;
 
+    this.generatedQueries = MultipleQueries.generateQueries(this.amountOfQueries, this.fieldLength * this.fieldLength);
+    this.generatingQueriesTime = new Date() - startTime;
   }
 
   generateYieldsFromQueries() {
+    const startTime = new Date();
 
     this.generatedYieldsFromQueries = [];
-    const startTime = new Date();
     this.generatedQueries.forEach(generatedQuery => {
       this.generatedYieldsFromQueries.push(FieldYieldSolution.solveYield(generatedQuery, this.generatedIntegralImage));
     });
-    const elapsedTime = new Date() - startTime;
-    this.generetingYieldsFromQueriesTime = elapsedTime;
+    this.generetingYieldsFromQueriesTime = new Date() - startTime;
   }
 
   generateInformationObject() {
@@ -51,7 +46,8 @@ class Performance {
       {
         task: "Generating integral Image",
         quantityOfInputs: this.fieldLength + ' [N]',
-        elapsedTime: this.generatingFieldTime + ' ms',
+        elapsedTime: this.generatingIntegralImageTime + ' ms',
+
       },
       {
         task: "Generating list of queries",
@@ -63,7 +59,7 @@ class Performance {
         quantityOfInputs: this.amountOfQueries + ' [Q]',
         elapsedTime: this.generetingYieldsFromQueriesTime + ' ms',
       }
-    ];
+    ]; 
   }
 
 }
