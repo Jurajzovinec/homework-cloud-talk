@@ -85,8 +85,6 @@ The third query result is 9 since the yields in that part equal to 5, 3 and 1.
 
 ### Your solution description of first task
 
-Write your idea description along with time and memory complexity here.
-
 My solution is based on usage of *Summed-area table* algorithm.
 
 #### Time complexity
@@ -178,7 +176,7 @@ const amountOfQueries = 100; // Q
 
 Init app:
 
-1. Open project and move to src folder by typing *cd src* to terminal.
+1. Open project and move to yield_field folder by typing *cd yield_field* to terminal.
 2. Start main.js file by typing *node main* to terminal.
 3. Feel free to test app with Jest by typing *npm run test* to terminal.
 
