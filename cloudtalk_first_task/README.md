@@ -166,7 +166,7 @@ const strawberryFieldLength = 100; // N, lenght of field => Area = N*N
 const amountOfQueries = 100; // Q
 ```
 
-Init app:
+**Init app:**
 
 Simply place following command into your terminal (run this command from root directory):
 
@@ -174,9 +174,9 @@ Simply place following command into your terminal (run this command from root di
 $ start-first-task
 ```
 
-Test app:
+**Unit tests:**
 
-Make sure Jest is between your devDependecies by typing following command into your terminal:
+In oredeMake sure Jest is between your devDependecies by typing following command into your terminal:
 
 ```text
 $ npm install --save-Dev jest
