@@ -12,7 +12,6 @@ you need them)
 DB schema is up to you.
 
 ## Contact sync
-
 ### https://legacydocs.hubspot.com/docs/methods/contacts/contacts-overview
 
 Contact fields to sync from Hubspot:
@@ -23,7 +22,6 @@ Contact fields to sync from Hubspot:
 * createdate
 
 ## Ticket sync
-
 ### https://legacydocs.hubspot.com/docs/methods/tickets/tickets-overview
 
 Ticket fields to sync from Hubspot:

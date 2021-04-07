@@ -79,6 +79,8 @@ My solution is based on usage of libraries:
 * expressJS -> allowed to build listening server
 * puppeteer -> allowed to scrape forecast data
 
+Local server adress: http://localhost:5050/api/temperature
+
 To run this application it is neccesary to install mention libraries by:
 
 ```text
@@ -88,5 +90,5 @@ $ npm install
 Then server can be initialized with command:
 
 ```text
-$ start-second-task
+$ npm run start-second-task
 ```

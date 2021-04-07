@@ -1,8 +1,8 @@
 const Performance = require('./classes/performance');
 const MemoryUsage = require('./classes/memoryUsage');
 
-const strawberryFieldLength = 100; // N, lenght of field => Area = N*N
-const amountOfQueries = 100; // Q
+const strawberryFieldLength = 5000; // N, lenght of field => Area = N*N
+const amountOfQueries = 10; // Q
 
 const app = new Performance(strawberryFieldLength, amountOfQueries);
 app.generateIntegralImage();

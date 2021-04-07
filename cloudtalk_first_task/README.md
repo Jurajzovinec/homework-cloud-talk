@@ -117,43 +117,132 @@ Q = 10 000
 ```
 #### Memory complexity
 
-Memory complexity has been tested for whole process of the application, where memory usage is being measured at the end of the *main.js*. Based on tests, which results are shown below, we can assume space complexity grows linearly with growing number of inputs therefore we can say it is in O(N) notation.
+Based on tests below we can assume:
+
+1. With growing number of inputs Q, memory consumption grows linearly => O(N).
+2. With growing number of inputs N, memory consumption grows expo exponentially => O(N^2) (curve is getting steeper).
+
+<p align="center">
+  <img src="graphs/MemoryConsumptionGrowingQ.png" />
+</p>
+
+<details><summary>**Memory consumption for growing QUERIES**</summary>
 
 ```text
-N = 100
-Q = 100
+N = 10
+Q = 1
 ┌─────────┬────────────────┬─────────────┐
 │ (index) │    whatUsed    │  usageInMb  │
 ├─────────┼────────────────┼─────────────┤
-│    0    │     'rss'      │ '20.27 MB.' │
+│    0    │     'rss'      │ '20.29 MB.' │
 │    1    │  'heapTotal'   │  '4.2 MB.'  │
-│    2    │   'heapUsed'   │ '3.93 MB.'  │
+│    2    │   'heapUsed'   │ '3.61 MB.'  │
 │    3    │   'external'   │ '0.37 MB.'  │
 │    4    │ 'arrayBuffers' │ '0.01 MB.'  │
 └─────────┴────────────────┴─────────────┘
-N = 1 000
-Q = 1 000
+N = 10
+Q = 1 000 // + ­­ 1 MB
+┌─────────┬────────────────┬────────────┐
+│ (index) │    whatUsed    │ usageInMb  │
+├─────────┼────────────────┼────────────┤
+│    0    │     'rss'      │ '21.4 MB.' │
+│    1    │  'heapTotal'   │ '5.2 MB.'  │
+│    2    │   'heapUsed'   │ '3.65 MB.' │
+│    3    │   'external'   │ '0.37 MB.' │
+│    4    │ 'arrayBuffers' │ '0.01 MB.' │
+└─────────┴────────────────┴────────────┘
+N = 10
+Q = 100 000 // +  27 MB
 ┌─────────┬────────────────┬─────────────┐
 │ (index) │    whatUsed    │  usageInMb  │
 ├─────────┼────────────────┼─────────────┤
-│    0    │     'rss'      │ '57.94 MB.' │
-│    1    │  'heapTotal'   │ '57.08 MB.' │
-│    2    │   'heapUsed'   │ '27.05 MB.' │
+│    0    │     'rss'      │ '47.32 MB.' │
+│    1    │  'heapTotal'   │ '46.63 MB.' │
+│    2    │   'heapUsed'   │ '15.64 MB.' │
 │    3    │   'external'   │ '0.37 MB.'  │
 │    4    │ 'arrayBuffers' │ '0.01 MB.'  │
 └─────────┴────────────────┴─────────────┘
-N = 10 000
-Q = 10 000
+N = 10
+Q = 1 000 000 // +  148 MB
+┌─────────┬────────────────┬──────────────┐
+│ (index) │    whatUsed    │  usageInMb   │
+├─────────┼────────────────┼──────────────┤
+│    0    │     'rss'      │ '168.93 MB.' │
+│    1    │  'heapTotal'   │ '151.07 MB.' │
+│    2    │   'heapUsed'   │ '116.76 MB.' │
+│    3    │   'external'   │  '0.37 MB.'  │
+│    4    │ 'arrayBuffers' │  '0.01 MB.'  │
+└─────────┴────────────────┴──────────────┘
+```
+
+</details>
+
+<p align="center">
+  <img src="graphs/MemoryConsumptionGrowingN.png" />
+</p>
+
+<details><summary>**Memory consumption for growing FIELD**</summary>
+
+```text
+N = 3
+Q = 10
+┌─────────┬────────────────┬────────────┐
+│ (index) │    whatUsed    │ usageInMb  │
+├─────────┼────────────────┼────────────┤
+│    0    │     'rss'      │ '20.2 MB.' │
+│    1    │  'heapTotal'   │ '4.2 MB.'  │
+│    2    │   'heapUsed'   │ '3.61 MB.' │
+│    3    │   'external'   │ '0.37 MB.' │
+│    4    │ 'arrayBuffers' │ '0.01 MB.' │
+└─────────┴────────────────┴────────────┘
+N = 10 // + 0.05 MB
+Q = 10
+┌─────────┬────────────────┬─────────────┐
+│ (index) │    whatUsed    │  usageInMb  │
+├─────────┼────────────────┼─────────────┤
+│    0    │     'rss'      │ '20.25 MB.' │
+│    1    │  'heapTotal'   │  '4.2 MB.'  │
+│    2    │   'heapUsed'   │ '3.61 MB.'  │
+│    3    │   'external'   │ '0.37 MB.'  │
+│    4    │ 'arrayBuffers' │ '0.01 MB.'  │
+└─────────┴────────────────┴─────────────┘
+N = 1 000 // + ­­ 38 MB
+Q = 10 
+┌─────────┬────────────────┬─────────────┐
+│ (index) │    whatUsed    │  usageInMb  │
+├─────────┼────────────────┼─────────────┤
+│    0    │     'rss'      │ '58.08 MB.' │
+│    1    │  'heapTotal'   │ '57.33 MB.' │
+│    2    │   'heapUsed'   │ '26.36 MB.' │
+│    3    │   'external'   │ '0.37 MB.'  │
+│    4    │ 'arrayBuffers' │ '0.01 MB.'  │
+└─────────┴────────────────┴─────────────┘
+N = 5 000 // + ­­ 614 MB
+Q = 10 
+┌─────────┬────────────────┬──────────────┐
+│ (index) │    whatUsed    │  usageInMb   │
+├─────────┼────────────────┼──────────────┤
+│    0    │     'rss'      │ '634.71 MB.' │
+│    1    │  'heapTotal'   │ '642.69 MB.' │
+│    2    │   'heapUsed'   │ '575.88 MB.' │
+│    3    │   'external'   │  '0.37 MB.'  │
+│    4    │ 'arrayBuffers' │  '0.01 MB.'  │
+└─────────┴────────────────┴──────────────┘
+N = 10 000 // + ­­ 2363 MB
+Q = 10 
 ┌─────────┬────────────────┬───────────────┐
 │ (index) │    whatUsed    │   usageInMb   │
 ├─────────┼────────────────┼───────────────┤
-│    0    │     'rss'      │ '2385.41 MB.' │
-│    1    │  'heapTotal'   │ '2463.64 MB.' │
-│    2    │   'heapUsed'   │ '2301.35 MB.' │
+│    0    │     'rss'      │ '2383.86 MB.' │
+│    1    │  'heapTotal'   │ '2462.64 MB.' │
+│    2    │   'heapUsed'   │ '2293.44 MB.' │
 │    3    │   'external'   │  '0.37 MB.'   │
 │    4    │ 'arrayBuffers' │  '0.01 MB.'   │
 └─────────┴────────────────┴───────────────┘
 ```
+
+</details>
+
 
 #### Try out solution
 
