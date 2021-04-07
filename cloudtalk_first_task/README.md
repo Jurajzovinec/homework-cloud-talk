@@ -264,7 +264,7 @@ $ start-first-task
 
 **Unit tests:**
 
-In oredeMake sure Jest is between your devDependecies by typing following command into your terminal:
+Make sure Jest is between your devDependecies by typing following command into your terminal:
 
 ```text
 $ npm install --save-Dev jest
