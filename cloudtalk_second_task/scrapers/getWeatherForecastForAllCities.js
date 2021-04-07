@@ -1,5 +1,4 @@
 const puppeteer = require('puppeteer');
-const capitalizeFirstLetter = require('../utilities/capitalizeFirstLetter');
 
 const getWeatherForecastForAllCities = async (cities) => {
 

@@ -1,5 +1,4 @@
 const validateScrapedWeatherForecastFile = require('./utilities/validateScrapedWeatherForecastFile');
-const capitalizeFirstLetter = require('./utilities/capitalizeFirstLetter');
 const scrapeDataAndWriteToDb = require('./scrapers/scrapeDataAndWriteToDb');
 const express = require('express');
 
