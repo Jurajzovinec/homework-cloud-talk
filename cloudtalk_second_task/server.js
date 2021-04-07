@@ -55,7 +55,7 @@ app.get('/api/temperature', (req, res) => {
 
 app.get('/api/temperature/:identifier', (req, res) => {
     console.log('api/temperature of city invoked . . .');
-    
+
     responseObject = {};
     const requestedCityInformation = req.params.identifier;
 
@@ -74,7 +74,7 @@ app.get('/api/temperature/:identifier', (req, res) => {
     try {
         const scrapedWeatherForecast = require('./data/scrapedWeatherForecast.json');
         const indexOfReturnedInformation = scrapedWeatherForecast.findIndex((cityData) => cityData.id == requestedCityInformation.toLowerCase());
-        if (indexOfReturnedInformation == -1) throw new Error (`Information of ${requestedCityInformation} place does not exist.`);
+        if (indexOfReturnedInformation == -1) throw new Error(`Information of ${requestedCityInformation} place does not exist.`);
         responseObject.status = true;
         responseObject.statusCode = 200;
         responseObject.index = indexOfReturnedInformation;
@@ -87,17 +87,25 @@ app.get('/api/temperature/:identifier', (req, res) => {
         responseObject.error = error.toString();
         res.status(404);
     }
- 
+
     res.header("Content-Type", 'application/json');
     res.send(JSON.stringify(responseObject, null, 2));
 
 });
 
-function validateScrapedWeatherForecastFile(){
+const validateScrapedWeatherForecastFile = () => {
+
     const scrapedWeatherForecast = require('./data/scrapedWeatherForecast.json');
+
     if (scrapedWeatherForecast == "{}") throw new Error("Any forecast has been scraped.");
     if (scrapedWeatherForecast == "[]") throw new Error("Any forecast has been scraped.");
     if (scrapedWeatherForecast == "") throw new Error("Any forecast has been scraped.");
-}
 
-app.listen(port, () => console.log(`Express server running on ${port}.`));
+};
+
+app.listen(port, () => {
+
+ console.log(`Express server running on http://localhost:${port}\n`);
+ console.log(`Endpoints to test:\n\nhttp://localhost:${port}/api/temperature/scrape\nhttp://localhost:${port}/api/temperature\nhttp://localhost:${port}/api/temperature/kojsovka`);
+
+});
