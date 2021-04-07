@@ -12,14 +12,3 @@ const scrapeDataAndWriteToDb = async() =>{
 };
 
 module.exports = scrapeDataAndWriteToDb;
-
-/*
-
-async function scrapeDataAndWriteToDb(){
-    const scrapedData = await getWeatherForecastForAllCities(await getListOfCities());
-    const storedData = JSON.stringify(await scrapedData, null, 2);
-    fs.writeFileSync("data/scrapedWeatherForecast.json", storedData);
-}
-
-
-*/

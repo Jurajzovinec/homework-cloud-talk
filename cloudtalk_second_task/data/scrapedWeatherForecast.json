@@ -3,1320 +3,1320 @@
     "id": "b.bystrica",
     "city": "B.bystrica",
     "temperature": {
-      "low": "11",
-      "high": "13"
+      "low": "3",
+      "high": "5"
     }
   },
   {
     "id": "b.stiavnica",
     "city": "B.stiavnica",
     "temperature": {
-      "low": "9",
-      "high": "11"
+      "low": "1",
+      "high": "3"
     }
   },
   {
     "id": "ban_n.bebravou",
     "city": "Ban_n.bebravou",
     "temperature": {
-      "low": "13",
-      "high": "15"
+      "low": "5",
+      "high": "7"
     }
   },
   {
     "id": "bardejov",
     "city": "Bardejov",
     "temperature": {
-      "low": "12",
-      "high": "14"
+      "low": "3",
+      "high": "5"
     }
   },
   {
     "id": "bojnice",
     "city": "Bojnice",
     "temperature": {
-      "low": "12",
-      "high": "14"
+      "low": "4",
+      "high": "6"
     }
   },
   {
     "id": "bratislava",
     "city": "Bratislava",
     "temperature": {
-      "low": "15",
-      "high": "17"
+      "low": "6",
+      "high": "8"
     }
   },
   {
     "id": "brezno",
     "city": "Brezno",
     "temperature": {
-      "low": "9",
-      "high": "11"
+      "low": "2",
+      "high": "4"
     }
   },
   {
     "id": "bucie_start",
     "city": "Bucie_start",
     "temperature": {
-      "low": "7",
-      "high": "9"
+      "low": "-2",
+      "high": "0"
     }
   },
   {
     "id": "budapest",
     "city": "Budapest",
     "temperature": {
-      "low": "14",
-      "high": "16"
+      "low": "7",
+      "high": "9"
     }
   },
   {
     "id": "bukova",
     "city": "Bukova",
     "temperature": {
-      "low": "14",
-      "high": "16"
+      "low": "5",
+      "high": "7"
     }
   },
   {
     "id": "burgas",
     "city": "Burgas",
     "temperature": {
-      "low": "10",
-      "high": "12"
+      "low": "14",
+      "high": "16"
     }
   },
   {
     "id": "bytca",
     "city": "Bytca",
     "temperature": {
-      "low": "12",
-      "high": "14"
+      "low": "3",
+      "high": "5"
     }
   },
   {
     "id": "cadca",
     "city": "Cadca",
     "temperature": {
-      "low": "10",
-      "high": "12"
+      "low": "2",
+      "high": "4"
     }
   },
   {
     "id": "chopok",
     "city": "Chopok",
     "temperature": {
-      "low": "-4",
-      "high": "-2"
+      "low": "-10",
+      "high": "-8"
     }
   },
   {
     "id": "cierna_kopa",
     "city": "Cierna_kopa",
     "temperature": {
-      "low": "5",
-      "high": "7"
+      "low": "-4",
+      "high": "-2"
     }
   },
   {
     "id": "d.streda",
     "city": "D.streda",
     "temperature": {
-      "low": "14",
-      "high": "16"
+      "low": "6",
+      "high": "8"
     }
   },
   {
     "id": "detva",
     "city": "Detva",
     "temperature": {
-      "low": "10",
-      "high": "12"
+      "low": "3",
+      "high": "5"
     }
   },
   {
     "id": "dol.kubin",
     "city": "Dol.kubin",
     "temperature": {
-      "low": "10",
-      "high": "12"
+      "low": "2",
+      "high": "4"
     }
   },
   {
     "id": "dovalovo",
     "city": "Dovalovo",
     "temperature": {
-      "low": "9",
-      "high": "11"
+      "low": "0",
+      "high": "2"
     }
   },
   {
     "id": "dudince",
     "city": "Dudince",
     "temperature": {
-      "low": "13",
-      "high": "15"
+      "low": "6",
+      "high": "8"
     }
   },
   {
     "id": "galanta",
     "city": "Galanta",
     "temperature": {
-      "low": "14",
-      "high": "16"
+      "low": "6",
+      "high": "8"
     }
   },
   {
     "id": "gbelce",
     "city": "Gbelce",
     "temperature": {
-      "low": "14",
-      "high": "16"
+      "low": "6",
+      "high": "8"
     }
   },
   {
     "id": "gelnica",
     "city": "Gelnica",
     "temperature": {
-      "low": "10",
-      "high": "12"
+      "low": "4",
+      "high": "6"
     }
   },
   {
     "id": "gyor",
     "city": "Gyor",
     "temperature": {
-      "low": "13",
-      "high": "15"
+      "low": "6",
+      "high": "8"
     }
   },
   {
     "id": "hajske",
     "city": "Hajske",
     "temperature": {
-      "low": "13",
-      "high": "15"
+      "low": "6",
+      "high": "8"
     }
   },
   {
     "id": "hlohovec",
     "city": "Hlohovec",
     "temperature": {
-      "low": "13",
-      "high": "15"
+      "low": "6",
+      "high": "8"
     }
   },
   {
     "id": "horni_becva",
     "city": "Horni_becva",
     "temperature": {
-      "low": "10",
-      "high": "12"
+      "low": "0",
+      "high": "2"
     }
   },
   {
     "id": "hrabovo",
     "city": "Hrabovo",
     "temperature": {
-      "low": "10",
-      "high": "12"
+      "low": "1",
+      "high": "3"
     }
   },
   {
     "id": "hrinova",
     "city": "Hrinova",
     "temperature": {
-      "low": "9",
-      "high": "11"
+      "low": "2",
+      "high": "4"
     }
   },
   {
     "id": "hronec",
     "city": "Hronec",
     "temperature": {
-      "low": "8",
-      "high": "10"
+      "low": "1",
+      "high": "3"
     }
   },
   {
     "id": "humenne",
     "city": "Humenne",
     "temperature": {
-      "low": "10",
-      "high": "12"
+      "low": "5",
+      "high": "7"
     }
   },
   {
     "id": "hurbanovo",
     "city": "Hurbanovo",
     "temperature": {
-      "low": "13",
-      "high": "15"
+      "low": "6",
+      "high": "8"
     }
   },
   {
     "id": "ilava",
     "city": "Ilava",
     "temperature": {
-      "low": "13",
-      "high": "15"
+      "low": "5",
+      "high": "7"
     }
   },
   {
     "id": "iliasovce",
     "city": "Iliasovce",
     "temperature": {
-      "low": "10",
-      "high": "12"
+      "low": "3",
+      "high": "5"
     }
   },
   {
     "id": "innsbruck",
     "city": "Innsbruck",
     "temperature": {
-      "low": "15",
-      "high": "17"
+      "low": "-1",
+      "high": "1"
     }
   },
   {
     "id": "inovec",
     "city": "Inovec",
     "temperature": {
-      "low": "7",
-      "high": "9"
+      "low": "-1",
+      "high": "1"
     }
   },
   {
     "id": "j.bohunice",
     "city": "J.bohunice",
     "temperature": {
-      "low": "14",
-      "high": "16"
+      "low": "6",
+      "high": "8"
     }
   },
   {
     "id": "jamnik",
     "city": "Jamnik",
     "temperature": {
-      "low": "10",
-      "high": "12"
+      "low": "3",
+      "high": "5"
     }
   },
   {
     "id": "jasova",
     "city": "Jasova",
     "temperature": {
-      "low": "13",
-      "high": "15"
+      "low": "6",
+      "high": "8"
     }
   },
   {
     "id": "kamenica",
     "city": "Kamenica",
     "temperature": {
-      "low": "10",
-      "high": "12"
+      "low": "5",
+      "high": "7"
     }
   },
   {
     "id": "kamenicky_hrad",
     "city": "Kamenicky_hrad",
     "temperature": {
-      "low": "10",
-      "high": "12"
+      "low": "1",
+      "high": "3"
     }
   },
   {
     "id": "kerkira",
     "city": "Kerkira",
     "temperature": {
-      "low": "16",
-      "high": "18"
+      "low": "15",
+      "high": "17"
     }
   },
   {
     "id": "kezmarok",
     "city": "Kezmarok",
     "temperature": {
-      "low": "8",
-      "high": "10"
+      "low": "1",
+      "high": "3"
     }
   },
   {
     "id": "kisber",
     "city": "Kisber",
     "temperature": {
-      "low": "13",
-      "high": "15"
+      "low": "6",
+      "high": "8"
     }
   },
   {
     "id": "kl.vepor",
     "city": "Kl.vepor",
     "temperature": {
-      "low": "4",
-      "high": "6"
+      "low": "-4",
+      "high": "-2"
     }
   },
   {
     "id": "klenovec",
     "city": "Klenovec",
     "temperature": {
-      "low": "8",
-      "high": "10"
+      "low": "1",
+      "high": "3"
     }
   },
   {
     "id": "kohut",
     "city": "Kohut",
     "temperature": {
-      "low": "9",
-      "high": "11"
+      "low": "1",
+      "high": "3"
     }
   },
   {
     "id": "kojsovka",
     "city": "Kojsovka",
     "temperature": {
-      "low": "4",
-      "high": "6"
+      "low": "-4",
+      "high": "-2"
     }
   },
   {
     "id": "komarno",
     "city": "Komarno",
     "temperature": {
-      "low": "14",
-      "high": "16"
+      "low": "6",
+      "high": "8"
     }
   },
   {
     "id": "kosice",
     "city": "Kosice",
     "temperature": {
-      "low": "11",
-      "high": "13"
+      "low": "5",
+      "high": "7"
     }
   },
   {
     "id": "krakow",
     "city": "Krakow",
     "temperature": {
-      "low": "12",
-      "high": "14"
+      "low": "3",
+      "high": "5"
     }
   },
   {
     "id": "kralova_hola",
     "city": "Kralova_hola",
     "temperature": {
-      "low": "-3",
-      "high": "-1"
+      "low": "-8",
+      "high": "-6"
     }
   },
   {
     "id": "kral_chlmec",
     "city": "Kral_chlmec",
     "temperature": {
-      "low": "11",
-      "high": "13"
+      "low": "6",
+      "high": "8"
     }
   },
   {
     "id": "kras_n.kysucou",
     "city": "Kras_n.kysucou",
     "temperature": {
-      "low": "11",
-      "high": "13"
+      "low": "2",
+      "high": "4"
     }
   },
   {
     "id": "krmelin",
     "city": "Krmelin",
     "temperature": {
-      "low": "12",
-      "high": "14"
+      "low": "2",
+      "high": "4"
     }
   },
   {
     "id": "krupina",
     "city": "Krupina",
     "temperature": {
-      "low": "11",
-      "high": "13"
+      "low": "5",
+      "high": "7"
     }
   },
   {
     "id": "kuchyna",
     "city": "Kuchyna",
     "temperature": {
-      "low": "14",
-      "high": "16"
+      "low": "4",
+      "high": "6"
     }
   },
   {
     "id": "kunerad",
     "city": "Kunerad",
     "temperature": {
-      "low": "9",
-      "high": "11"
+      "low": "0",
+      "high": "2"
     }
   },
   {
     "id": "kys_n.mesto",
     "city": "Kys_n.mesto",
     "temperature": {
-      "low": "11",
-      "high": "13"
+      "low": "3",
+      "high": "5"
     }
   },
   {
     "id": "l.mikulas",
     "city": "L.mikulas",
     "temperature": {
-      "low": "9",
-      "high": "11"
+      "low": "0",
+      "high": "2"
     }
   },
   {
     "id": "lachtal",
     "city": "Lachtal",
     "temperature": {
-      "low": "4",
-      "high": "6"
+      "low": "-9",
+      "high": "-7"
     }
   },
   {
     "id": "lecce",
     "city": "Lecce",
     "temperature": {
-      "low": "14",
-      "high": "16"
+      "low": "10",
+      "high": "12"
     }
   },
   {
     "id": "lendak",
     "city": "Lendak",
     "temperature": {
-      "low": "7",
-      "high": "9"
+      "low": "-1",
+      "high": "1"
     }
   },
   {
     "id": "levice",
     "city": "Levice",
     "temperature": {
-      "low": "13",
-      "high": "15"
+      "low": "6",
+      "high": "8"
     }
   },
   {
     "id": "levoca",
     "city": "Levoca",
     "temperature": {
-      "low": "9",
-      "high": "11"
+      "low": "2",
+      "high": "4"
     }
   },
   {
     "id": "liesek",
     "city": "Liesek",
     "temperature": {
-      "low": "9",
-      "high": "11"
+      "low": "-1",
+      "high": "1"
     }
   },
   {
     "id": "lipt.hradok",
     "city": "Lipt.hradok",
     "temperature": {
-      "low": "9",
-      "high": "11"
+      "low": "0",
+      "high": "2"
     }
   },
   {
     "id": "lipt.jan",
     "city": "Lipt.jan",
     "temperature": {
-      "low": "9",
-      "high": "11"
+      "low": "0",
+      "high": "2"
     }
   },
   {
     "id": "lipt.luzna",
     "city": "Lipt.luzna",
     "temperature": {
-      "low": "7",
-      "high": "9"
+      "low": "-1",
+      "high": "1"
     }
   },
   {
     "id": "lipt.revuce",
     "city": "Lipt.revuce",
     "temperature": {
-      "low": "8",
-      "high": "10"
+      "low": "-1",
+      "high": "1"
     }
   },
   {
     "id": "lipt.trnovec",
     "city": "Lipt.trnovec",
     "temperature": {
-      "low": "9",
-      "high": "11"
+      "low": "1",
+      "high": "3"
     }
   },
   {
     "id": "lomnicak",
     "city": "Lomnicak",
     "temperature": {
-      "low": "-5",
-      "high": "-3"
+      "low": "-14",
+      "high": "-12"
     }
   },
   {
     "id": "lubela",
     "city": "Lubela",
     "temperature": {
-      "low": "9",
-      "high": "11"
+      "low": "0",
+      "high": "2"
     }
   },
   {
     "id": "lucenec",
     "city": "Lucenec",
     "temperature": {
-      "low": "13",
-      "high": "15"
+      "low": "7",
+      "high": "9"
     }
   },
   {
     "id": "lukacovce_nr",
     "city": "Lukacovce_nr",
     "temperature": {
-      "low": "13",
-      "high": "15"
+      "low": "6",
+      "high": "8"
     }
   },
   {
     "id": "malacky",
     "city": "Malacky",
     "temperature": {
-      "low": "15",
-      "high": "17"
+      "low": "5",
+      "high": "7"
     }
   },
   {
     "id": "malino_brdo",
     "city": "Malino_brdo",
     "temperature": {
-      "low": "8",
-      "high": "10"
+      "low": "-2",
+      "high": "0"
     }
   },
   {
     "id": "martin",
     "city": "Martin",
     "temperature": {
-      "low": "10",
-      "high": "12"
+      "low": "3",
+      "high": "5"
     }
   },
   {
     "id": "martinske_hole",
     "city": "Martinske_hole",
     "temperature": {
-      "low": "3",
-      "high": "5"
+      "low": "-6",
+      "high": "-4"
     }
   },
   {
     "id": "medzilaborce",
     "city": "Medzilaborce",
     "temperature": {
-      "low": "9",
-      "high": "11"
+      "low": "3",
+      "high": "5"
     }
   },
   {
     "id": "michalovce",
     "city": "Michalovce",
     "temperature": {
-      "low": "11",
-      "high": "13"
+      "low": "6",
+      "high": "8"
     }
   },
   {
     "id": "mochovce",
     "city": "Mochovce",
     "temperature": {
-      "low": "13",
-      "high": "15"
+      "low": "5",
+      "high": "7"
     }
   },
   {
     "id": "myjava",
     "city": "Myjava",
     "temperature": {
-      "low": "13",
-      "high": "15"
+      "low": "4",
+      "high": "6"
     }
   },
   {
     "id": "namestovo",
     "city": "Namestovo",
     "temperature": {
-      "low": "9",
-      "high": "11"
+      "low": "0",
+      "high": "2"
     }
   },
   {
     "id": "nitra",
     "city": "Nitra",
     "temperature": {
-      "low": "14",
-      "high": "16"
+      "low": "7",
+      "high": "9"
     }
   },
   {
     "id": "nova_bosaca",
     "city": "Nova_bosaca",
     "temperature": {
-      "low": "12",
-      "high": "14"
+      "low": "3",
+      "high": "5"
     }
   },
   {
     "id": "nove_m_n.vahom",
     "city": "Nove_m_n.vahom",
     "temperature": {
-      "low": "13",
-      "high": "15"
+      "low": "5",
+      "high": "7"
     }
   },
   {
     "id": "nove_zamky",
     "city": "Nove_zamky",
     "temperature": {
-      "low": "13",
-      "high": "15"
+      "low": "6",
+      "high": "8"
     }
   },
   {
     "id": "ostra_hora",
     "city": "Ostra_hora",
     "temperature": {
-      "low": "10",
-      "high": "12"
+      "low": "3",
+      "high": "5"
     }
   },
   {
     "id": "pariz",
     "city": "Pariz",
     "temperature": {
-      "low": "11",
-      "high": "13"
+      "low": "7",
+      "high": "9"
     }
   },
   {
     "id": "partizanske",
     "city": "Partizanske",
     "temperature": {
-      "low": "13",
-      "high": "15"
+      "low": "5",
+      "high": "7"
     }
   },
   {
     "id": "pezinok",
     "city": "Pezinok",
     "temperature": {
-      "low": "14",
-      "high": "16"
+      "low": "5",
+      "high": "7"
     }
   },
   {
     "id": "piestany",
     "city": "Piestany",
     "temperature": {
-      "low": "13",
-      "high": "15"
+      "low": "6",
+      "high": "8"
     }
   },
   {
     "id": "pohorela",
     "city": "Pohorela",
     "temperature": {
-      "low": "5",
-      "high": "7"
+      "low": "-2",
+      "high": "0"
     }
   },
   {
     "id": "polomka",
     "city": "Polomka",
     "temperature": {
-      "low": "8",
-      "high": "10"
+      "low": "1",
+      "high": "3"
     }
   },
   {
     "id": "poltar",
     "city": "Poltar",
     "temperature": {
-      "low": "13",
-      "high": "15"
+      "low": "6",
+      "high": "8"
     }
   },
   {
     "id": "poprad",
     "city": "Poprad",
     "temperature": {
-      "low": "8",
-      "high": "10"
+      "low": "0",
+      "high": "2"
     }
   },
   {
     "id": "pov.bystrica",
     "city": "Pov.bystrica",
     "temperature": {
-      "low": "12",
-      "high": "14"
+      "low": "4",
+      "high": "6"
     }
   },
   {
     "id": "praha",
     "city": "Praha",
     "temperature": {
-      "low": "11",
-      "high": "13"
+      "low": "3",
+      "high": "5"
     }
   },
   {
     "id": "presov",
     "city": "Presov",
     "temperature": {
-      "low": "12",
-      "high": "14"
+      "low": "5",
+      "high": "7"
     }
   },
   {
     "id": "prievidza",
     "city": "Prievidza",
     "temperature": {
-      "low": "12",
-      "high": "14"
+      "low": "4",
+      "high": "6"
     }
   },
   {
     "id": "puchov",
     "city": "Puchov",
     "temperature": {
-      "low": "12",
-      "high": "14"
+      "low": "4",
+      "high": "6"
     }
   },
   {
     "id": "ravni",
     "city": "Ravni",
     "temperature": {
-      "low": "11",
-      "high": "13"
+      "low": "8",
+      "high": "10"
     }
   },
   {
     "id": "revuca",
     "city": "Revuca",
     "temperature": {
-      "low": "11",
-      "high": "13"
+      "low": "5",
+      "high": "7"
     }
   },
   {
     "id": "rim",
     "city": "Rim",
     "temperature": {
-      "low": "17",
-      "high": "19"
+      "low": "14",
+      "high": "16"
     }
   },
   {
     "id": "rimavska_sobota",
     "city": "Rimavska_sobota",
     "temperature": {
-      "low": "13",
-      "high": "15"
+      "low": "6",
+      "high": "8"
     }
   },
   {
     "id": "roznava",
     "city": "Roznava",
     "temperature": {
-      "low": "12",
-      "high": "14"
+      "low": "4",
+      "high": "6"
     }
   },
   {
     "id": "ruzomberok",
     "city": "Ruzomberok",
     "temperature": {
-      "low": "11",
-      "high": "13"
+      "low": "2",
+      "high": "4"
     }
   },
   {
     "id": "s.smokovec",
     "city": "S.smokovec",
     "temperature": {
-      "low": "4",
-      "high": "6"
+      "low": "-4",
+      "high": "-2"
     }
   },
   {
     "id": "sabinov",
     "city": "Sabinov",
     "temperature": {
-      "low": "12",
-      "high": "14"
+      "low": "4",
+      "high": "6"
     }
   },
   {
     "id": "sahy",
     "city": "Sahy",
     "temperature": {
-      "low": "14",
-      "high": "16"
+      "low": "6",
+      "high": "8"
     }
   },
   {
     "id": "sala",
     "city": "Sala",
     "temperature": {
-      "low": "14",
-      "high": "16"
+      "low": "6",
+      "high": "8"
     }
   },
   {
     "id": "samorin",
     "city": "Samorin",
     "temperature": {
-      "low": "14",
-      "high": "16"
+      "low": "6",
+      "high": "8"
     }
   },
   {
     "id": "senec",
     "city": "Senec",
     "temperature": {
-      "low": "14",
-      "high": "16"
+      "low": "6",
+      "high": "8"
     }
   },
   {
     "id": "senica",
     "city": "Senica",
     "temperature": {
-      "low": "14",
-      "high": "16"
+      "low": "5",
+      "high": "7"
     }
   },
   {
     "id": "skalica",
     "city": "Skalica",
     "temperature": {
-      "low": "14",
-      "high": "16"
+      "low": "5",
+      "high": "7"
     }
   },
   {
     "id": "skalka",
     "city": "Skalka",
     "temperature": {
-      "low": "4",
-      "high": "6"
+      "low": "-4",
+      "high": "-2"
     }
   },
   {
     "id": "skalnate_pleso",
     "city": "Skalnate_pleso",
     "temperature": {
-      "low": "1",
-      "high": "3"
+      "low": "-9",
+      "high": "-7"
     }
   },
   {
     "id": "sliac",
     "city": "Sliac",
     "temperature": {
-      "low": "11",
-      "high": "13"
+      "low": "4",
+      "high": "6"
     }
   },
   {
     "id": "slubica",
     "city": "Slubica",
     "temperature": {
-      "low": "5",
-      "high": "7"
+      "low": "-2",
+      "high": "0"
     }
   },
   {
     "id": "snina",
     "city": "Snina",
     "temperature": {
-      "low": "10",
-      "high": "12"
+      "low": "4",
+      "high": "6"
     }
   },
   {
     "id": "sobrance",
     "city": "Sobrance",
     "temperature": {
-      "low": "10",
-      "high": "12"
+      "low": "5",
+      "high": "7"
     }
   },
   {
     "id": "sofia",
     "city": "Sofia",
     "temperature": {
-      "low": "8",
-      "high": "10"
+      "low": "4",
+      "high": "6"
     }
   },
   {
     "id": "solotvino",
     "city": "Solotvino",
     "temperature": {
-      "low": "10",
-      "high": "12"
+      "low": "5",
+      "high": "7"
     }
   },
   {
     "id": "spis_n.ves",
     "city": "Spis_n.ves",
     "temperature": {
-      "low": "9",
-      "high": "11"
+      "low": "2",
+      "high": "4"
     }
   },
   {
     "id": "spis_s.ves",
     "city": "Spis_s.ves",
     "temperature": {
-      "low": "11",
-      "high": "13"
+      "low": "2",
+      "high": "4"
     }
   },
   {
     "id": "split",
     "city": "Split",
     "temperature": {
-      "low": "10",
-      "high": "12"
+      "low": "9",
+      "high": "11"
     }
   },
   {
     "id": "stara_lubovna",
     "city": "Stara_lubovna",
     "temperature": {
-      "low": "9",
-      "high": "11"
+      "low": "2",
+      "high": "4"
     }
   },
   {
     "id": "stara_tura",
     "city": "Stara_tura",
     "temperature": {
-      "low": "13",
-      "high": "15"
+      "low": "4",
+      "high": "6"
     }
   },
   {
     "id": "stranik",
     "city": "Stranik",
     "temperature": {
-      "low": "8",
-      "high": "10"
+      "low": "0",
+      "high": "2"
     }
   },
   {
     "id": "strbske_pleso",
     "city": "Strbske_pleso",
     "temperature": {
-      "low": "0",
-      "high": "2"
+      "low": "-6",
+      "high": "-4"
     }
   },
   {
     "id": "stupava",
     "city": "Stupava",
     "temperature": {
-      "low": "15",
-      "high": "17"
+      "low": "5",
+      "high": "7"
     }
   },
   {
     "id": "sturovo",
     "city": "Sturovo",
     "temperature": {
-      "low": "14",
-      "high": "16"
+      "low": "7",
+      "high": "9"
     }
   },
   {
     "id": "suwalki",
     "city": "Suwalki",
     "temperature": {
-      "low": "7",
-      "high": "9"
+      "low": "3",
+      "high": "5"
     }
   },
   {
     "id": "svidnik",
     "city": "Svidnik",
     "temperature": {
-      "low": "12",
-      "high": "14"
+      "low": "4",
+      "high": "6"
     }
   },
   {
     "id": "swinica",
     "city": "Swinica",
     "temperature": {
-      "low": "-7",
-      "high": "-5"
+      "low": "-13",
+      "high": "-11"
     }
   },
   {
     "id": "telgart",
     "city": "Telgart",
     "temperature": {
-      "low": "4",
-      "high": "6"
+      "low": "-2",
+      "high": "0"
     }
   },
   {
     "id": "tisinec",
     "city": "Tisinec",
     "temperature": {
-      "low": "12",
-      "high": "14"
+      "low": "4",
+      "high": "6"
     }
   },
   {
     "id": "tisovec",
     "city": "Tisovec",
     "temperature": {
-      "low": "5",
-      "high": "7"
+      "low": "-1",
+      "high": "1"
     }
   },
   {
     "id": "topolcany",
     "city": "Topolcany",
     "temperature": {
-      "low": "13",
-      "high": "15"
+      "low": "6",
+      "high": "8"
     }
   },
   {
     "id": "toulouse",
     "city": "Toulouse",
     "temperature": {
-      "low": "17",
-      "high": "19"
+      "low": "11",
+      "high": "13"
     }
   },
   {
     "id": "trebisov",
     "city": "Trebisov",
     "temperature": {
-      "low": "11",
-      "high": "13"
+      "low": "6",
+      "high": "8"
     }
   },
   {
     "id": "trencin",
     "city": "Trencin",
     "temperature": {
-      "low": "13",
-      "high": "15"
+      "low": "5",
+      "high": "7"
     }
   },
   {
     "id": "trnava",
     "city": "Trnava",
     "temperature": {
-      "low": "14",
-      "high": "16"
+      "low": "6",
+      "high": "8"
     }
   },
   {
     "id": "tucepi",
     "city": "Tucepi",
     "temperature": {
-      "low": "11",
-      "high": "13"
+      "low": "8",
+      "high": "10"
     }
   },
   {
     "id": "tur.teplice",
     "city": "Tur.teplice",
     "temperature": {
-      "low": "10",
-      "high": "12"
+      "low": "3",
+      "high": "5"
     }
   },
   {
     "id": "tvrdosin",
     "city": "Tvrdosin",
     "temperature": {
-      "low": "10",
-      "high": "12"
+      "low": "1",
+      "high": "3"
     }
   },
   {
     "id": "uh.hradiste",
     "city": "Uh.hradiste",
     "temperature": {
-      "low": "14",
-      "high": "16"
+      "low": "5",
+      "high": "7"
     }
   },
   {
     "id": "uzhorod",
     "city": "Uzhorod",
     "temperature": {
-      "low": "10",
-      "high": "12"
+      "low": "5",
+      "high": "7"
     }
   },
   {
     "id": "val.mezirici",
     "city": "Val.mezirici",
     "temperature": {
-      "low": "13",
-      "high": "15"
+      "low": "3",
+      "high": "5"
     }
   },
   {
     "id": "varna",
     "city": "Varna",
     "temperature": {
-      "low": "9",
-      "high": "11"
+      "low": "12",
+      "high": "14"
     }
   },
   {
     "id": "vazec",
     "city": "Vazec",
     "temperature": {
-      "low": "7",
-      "high": "9"
+      "low": "-1",
+      "high": "1"
     }
   },
   {
     "id": "velka_raca",
     "city": "Velka_raca",
     "temperature": {
-      "low": "9",
-      "high": "11"
+      "low": "0",
+      "high": "2"
     }
   },
   {
     "id": "velky_krtis",
     "city": "Velky_krtis",
     "temperature": {
-      "low": "13",
-      "high": "15"
+      "low": "6",
+      "high": "8"
     }
   },
   {
     "id": "vieden",
     "city": "Vieden",
     "temperature": {
-      "low": "17",
-      "high": "19"
+      "low": "5",
+      "high": "7"
     }
   },
   {
     "id": "vran_n.toplou",
     "city": "Vran_n.toplou",
     "temperature": {
-      "low": "11",
-      "high": "13"
+      "low": "6",
+      "high": "8"
     }
   },
   {
     "id": "vychodna",
     "city": "Vychodna",
     "temperature": {
-      "low": "7",
-      "high": "9"
+      "low": "-1",
+      "high": "1"
     }
   },
   {
     "id": "zakopane",
     "city": "Zakopane",
     "temperature": {
-      "low": "6",
-      "high": "8"
+      "low": "-2",
+      "high": "0"
     }
   },
   {
     "id": "zarnovica",
     "city": "Zarnovica",
     "temperature": {
-      "low": "13",
-      "high": "15"
+      "low": "5",
+      "high": "7"
     }
   },
   {
     "id": "zeliezovce",
     "city": "Zeliezovce",
     "temperature": {
-      "low": "13",
-      "high": "15"
+      "low": "6",
+      "high": "8"
     }
   },
   {
     "id": "zermatt",
     "city": "Zermatt",
     "temperature": {
-      "low": "6",
-      "high": "8"
+      "low": "-5",
+      "high": "-3"
     }
   },
   {
     "id": "ziar_n.hronom",
     "city": "Ziar_n.hronom",
     "temperature": {
-      "low": "12",
-      "high": "14"
+      "low": "4",
+      "high": "6"
     }
   },
   {
     "id": "zilina",
     "city": "Zilina",
     "temperature": {
-      "low": "12",
-      "high": "14"
+      "low": "3",
+      "high": "5"
     }
   },
   {
     "id": "zlate_moravce",
     "city": "Zlate_moravce",
     "temperature": {
-      "low": "13",
-      "high": "15"
+      "low": "6",
+      "high": "8"
     }
   },
   {
     "id": "zvolen",
     "city": "Zvolen",
     "temperature": {
-      "low": "12",
-      "high": "14"
+      "low": "4",
+      "high": "6"
     }
   }
 ]
