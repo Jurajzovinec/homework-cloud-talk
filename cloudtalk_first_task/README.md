@@ -259,7 +259,7 @@ const amountOfQueries = 100; // Q
 Simply place following command into your terminal (run this command from root directory):
 
 ```text
-$ start-first-task
+$ npm run start-first-task
 ```
 
 **Unit tests:**
