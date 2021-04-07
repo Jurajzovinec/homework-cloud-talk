@@ -82,9 +82,13 @@ My solution is based on usage of *Summed-area table*f algorithm.
 #### Time complexity
 
 Computation consits of 3 main steps:
+
 1. Generating integral Image -> time complexity O(N^2)
 2. Generating list of queries -> time complexity O(N)
 3. Generating results from queries -> time complexity O(N)
+
+<details><summary>Time complexity results</summary>
+
 ```text
 N = 100
 Q = 100
@@ -115,6 +119,9 @@ Q = 10 000
 │    2    │ 'Generating results from queries' │   '10000 [Q]'    │   '16 ms'   │
 └─────────┴───────────────────────────────────┴──────────────────┴─────────────┘
 ```
+
+</details>
+
 #### Memory complexity
 
 Based on tests below we can assume:
