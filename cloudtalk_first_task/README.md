@@ -122,11 +122,7 @@ Based on tests below we can assume:
 1. With growing number of inputs Q, memory consumption grows linearly => O(N).
 2. With growing number of inputs N, memory consumption grows expo exponentially => O(N^2) (curve is getting steeper).
 
-<p align="center">
-  <img src="graphs/MemoryConsumptionGrowingQ.png" />
-</p>
-
-<details><summary>**Memory consumption for growing QUERIES**</summary>
+<details><summary>Memory consumption for growing QUERIES</summary>
 
 ```text
 N = 10
@@ -175,13 +171,13 @@ Q = 1 000 000 // +  148 MB
 └─────────┴────────────────┴──────────────┘
 ```
 
-</details>
-
 <p align="center">
-  <img src="graphs/MemoryConsumptionGrowingN.png" />
+  <img src="graphs/MemoryConsumptionGrowingQ.png" />
 </p>
 
-<details><summary>**Memory consumption for growing FIELD**</summary>
+</details>
+
+<details><summary>Memory consumption for growing FIELD</summary>
 
 ```text
 N = 3
@@ -241,8 +237,11 @@ Q = 10
 └─────────┴────────────────┴───────────────┘
 ```
 
-</details>
+<p align="center">
+  <img src="graphs/MemoryConsumptionGrowingN.png" />
+</p>
 
+</details>
 
 #### Try out solution
 
