@@ -49,3 +49,70 @@ Useful links:
 
 * https://legacydocs.hubspot.com/docs/methods/contacts/contacts-overview
 * https://legacydocs.hubspot.com/docs/methods/tickets/tickets-overview
+
+# My solution
+
+My solution is divided into to ways of running synchronization
+
+1. Periodic - where synchronization is initiated every 10 mins. 
+
+2. Contant - where synchronization is initiated immediately after previous synchornization finishes.
+
+```text
+npm run start-third-task-periodic
+npm run start-third-task-constant
+```
+
+Optimization of synchronization is based on storing "last updated" property of object from hubspot API. This timestamp is compared with the timestamp of latest synchronization. Based on result of this comparison old record is updated on the side of MySQL database.
+
+MySQL database named uses three tables with following schemas:
+
+```text
+USE hubspot;
+```
+
+```text
+DESCRIBE contacts;
+```
+
++-------------+--------------+------+-----+---------+----------------+
+| Field       | Type         | Null | Key | Default | Extra          |
++-------------+--------------+------+-----+---------+----------------+
+| id          | int(11)      | NO   | PRI | NULL    | auto_increment |
+| contact_id  | int(11)      | NO   | UNI | NULL    |                |
+| firstname   | varchar(300) | NO   |     | NULL    |                |
+| lastname    | varchar(300) | NO   |     | NULL    |                |
+| email       | varchar(300) | YES  |     | NULL    |                |
+| phone       | varchar(300) | YES  |     | NULL    |                |
+| create_date | varchar(300) | NO   |     | NULL    |                |
++-------------+--------------+------+-----+---------+----------------+
+
+```text
+DESCRIBE tickets;
+```
+
++-----------+--------------+------+-----+---------+----------------+
+| Field     | Type         | Null | Key | Default | Extra          |
++-----------+--------------+------+-----+---------+----------------+
+| id        | int(11)      | NO   | PRI | NULL    | auto_increment |
+| ticket_id | int(11)      | NO   | UNI | NULL    |                |
+| content   | varchar(300) | YES  |     | NULL    |                |
+| owner_id  | int(11)      | YES  |     | NULL    |                |
++-----------+--------------+------+-----+---------+----------------+
+
+```text
+DESCRIBE synchronizations;
+```
+
++----------------------+--------------+------+-----+---------+----------------+
+| Field                | Type         | Null | Key | Default | Extra          |
++----------------------+--------------+------+-----+---------+----------------+
+| id                   | int(11)      | NO   | PRI | NULL    | auto_increment |
+| synchronization_time | varchar(300) | NO   |     | NULL    |                |
+| added_tickets        | int(100)     | YES  |     | NULL    |                |
+| deleted_tickets      | int(100)     | YES  |     | NULL    |                |
+| updated_tickets      | int(100)     | YES  |     | NULL    |                |
+| added_contacts       | int(100)     | YES  |     | NULL    |                |
+| deleted_contacts     | int(100)     | YES  |     | NULL    |                |
+| updated_contacts     | int(100)     | YES  |     | NULL    |                |
++----------------------+--------------+------+-----+---------+----------------+

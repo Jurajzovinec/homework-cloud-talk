@@ -5,10 +5,17 @@
   "scripts": {
     "start-first-task": "cd cloudtalk_first_task && node main",
     "start-second-task": "cd cloudtalk_second_task && node server",
+    "start-third-task-periodic": "cd cloudtalk_third_task && node synchronizePeriodically",
+    "start-third-task-constant": "cd cloudtalk_third_task && node synchronizeConstantly",
     "test": "jest --coverage"
   },
   "dependencies": {
+    "@hubspot/api-client": "^3.4.1",
     "express": "^4.17.1",
-    "puppeteer": "^8.0.0"
+    "mysql2": "^2.2.5",
+    "node-cron": "^3.0.0",
+    "puppeteer": "^8.0.0",
+    "sequelize": "^6.6.2",
+    "shelljs": "^0.8.4"
   }
 }
