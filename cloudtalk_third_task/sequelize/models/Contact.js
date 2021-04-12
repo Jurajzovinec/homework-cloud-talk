@@ -2,14 +2,7 @@ const Sequelize = require("sequelize");
 const sequelize = require("../connectionToDatabase");
 
 const Contact = sequelize.define("Contact", {
-    /*
-    id: {
-        type: Sequelize.INTEGER(11),
-        allowNull: false,
-        autoIncrement: true,
-        primaryKey: true,
-    },
-    */
+
     contact_id: {
         type: Sequelize.INTEGER(11),
         allowNull: false,
