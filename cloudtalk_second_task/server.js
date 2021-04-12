@@ -1,6 +1,8 @@
+const express = require('express');
+
 const validateScrapedWeatherForecastFile = require('./utilities/validateScrapedWeatherForecastFile');
 const scrapeDataAndWriteToDb = require('./scrapers/scrapeDataAndWriteToDb');
-const express = require('express');
+const consoleEndpoints = require('./utilities/consoleEndpoints');
 
 const app = express();
 const port = (process.env.NODE_ENV === 'production') ? process.env.PORT : 5050;
@@ -35,6 +37,7 @@ app.get('/api/temperature/scrape', async (req, res) => {
 
     }
 
+    consoleEndpoints();
     res.header("Content-Type", 'application/json');
     res.send(JSON.stringify(responseObject, null, 2));
 
@@ -118,13 +121,5 @@ app.get('/api/temperature/:identifier', (req, res) => {
 
 });
 
-app.listen(port, () => {
+app.listen(port, () => consoleEndpoints());
 
-    console.log('\x1b[36m%s\x1b[0m', `Temperature forecast server running on http://localhost:${port}\n`);
-    console.log(`Endpoints to test:\n`);
-    console.log(`http://localhost:${port}/api/temperature/scrape`);
-    console.log(`http://localhost:${port}/api/temperature`);
-    console.log(`http://localhost:${port}/api/temperature/kojsovka`);
-    console.log(`http://localhost:${port}/api/temperature/atlantida`);
-
-});

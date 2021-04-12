@@ -5,6 +5,7 @@ const strawberryFieldLength = 5000; // N, lenght of field => Area = N*N
 const amountOfQueries = 10; // Q
 
 const app = new Performance(strawberryFieldLength, amountOfQueries);
+
 app.generateIntegralImage();
 app.generateQueries();
 app.generateYieldsFromQueries();
