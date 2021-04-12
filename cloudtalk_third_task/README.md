@@ -63,9 +63,9 @@ npm run start-third-task-periodic
 npm run start-third-task-constant
 ```
 
-Optimization of synchronization is based on storing "last updated" property of object from hubspot API. This timestamp is compared with the timestamp of latest synchronization. Based on result of this comparison old record is updated on the side of MySQL database. Synchronization is however slowed by inefficient way of comparing contact - ticket assosications. 
+Optimization of synchronization is based on storing "last updated" property of object from hubspot API. This timestamp is compared with the timestamp of latest synchronization. Based on result of this comparison old record is updated on the side of MySQL database. However, synchronization is slowed by inefficient way of comparing contact - ticket assosications with previous stored data. 
 
-MySQL database named uses three tables with following schemas:
+MySQL database named uses four tables with following schemas:
 
 ```text
 USE hubspot;
@@ -108,6 +108,7 @@ DESCRIBE synchronizations;
 | updated_contacts     | int(100)     | YES  |     | NULL    |                |
 +----------------------+--------------+------+-----+---------+----------------+
 
+
 DESCRIBE contacttickets;
 
 +------------+---------+------+-----+---------+----------------+
@@ -119,3 +120,13 @@ DESCRIBE contacttickets;
 +------------+---------+------+-----+---------+----------------+
 
 ```
+
+ContactTickets is relational table which displays relation between tickets and contacts. Relation is type of "belongsToMany" or m:n.
+
+## Environment preparation
+
+Part of this solution was also focused on preparation of contacts and tickets on hubspot account. Random data has been generated with cronning functions located in utilities folder. With those functions have been created thousands of:
+
+1. Contacts
+2. Tickets
+3. Associations between contacts and tickets
