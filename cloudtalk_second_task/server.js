@@ -37,7 +37,7 @@ app.get('/api/temperature/scrape', async (req, res) => {
 
     }
 
-    consoleEndpoints();
+    consoleEndpoints(port);
     res.header("Content-Type", 'application/json');
     res.send(JSON.stringify(responseObject, null, 2));
 
@@ -121,5 +121,5 @@ app.get('/api/temperature/:identifier', (req, res) => {
 
 });
 
-app.listen(port, () => consoleEndpoints());
+app.listen(port, () => consoleEndpoints(port));
 

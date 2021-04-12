@@ -1,4 +1,4 @@
-const consoleEndpoints = () => {
+const consoleEndpoints = (port) => {
 
     console.log('\x1b[36m%s\x1b[0m', `Temperature forecast server running on http://localhost:${port}\n`);
     console.log(`Endpoints to test:\n`);

@@ -26,7 +26,6 @@ const extractSimpleObjectsFromSelectedRelations = (selectedRelations) =>{
     return extractedSimpleObject;
 };
 
-// selectAllRelations();
 
 module.exports = selectAllRelations;
 
