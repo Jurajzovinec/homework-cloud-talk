@@ -1,7 +1,9 @@
 const syncAllContacts = require('./contacts_sync/syncAllContactsTable');
+const syncAllTickets = require('./tickets_sync/syncAllTicketsTable');
+const syncAllRelations = require('./relations_sync/syncAllRelations');
+
 const getLastSynchronizationRow = require('./synchronizations_sync/getLastSynchronizationRow');
 const insertSynchronizationRow = require('./synchronizations_sync/insertSynchronizationRow');
-const syncAllTickets = require('./tickets_sync/syncAllTicketsTable');
 
 const syncAll = async () => {
 
@@ -16,6 +18,8 @@ const syncAll = async () => {
     const contactSynchronizationResult = await syncAllContacts(lastSynchronizationDate);
 
     const ticketSynchronizationResult = await syncAllTickets(lastSynchronizationDate);
+
+    const synchronizeRelationsResult = await syncAllRelations();
 
     Object.assign(
         synchronizationObject,

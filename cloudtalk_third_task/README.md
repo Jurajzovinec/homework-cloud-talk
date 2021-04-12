@@ -56,14 +56,14 @@ My solution is divided into to ways of running synchronization
 
 1. Periodic - where synchronization is initiated every 10 mins. 
 
-2. Contant - where synchronization is initiated immediately after previous synchornization finishes.
+2. Constant - where synchronization is initiated immediately after previous synchornization finishes.
 
 ```text
 npm run start-third-task-periodic
 npm run start-third-task-constant
 ```
 
-Optimization of synchronization is based on storing "last updated" property of object from hubspot API. This timestamp is compared with the timestamp of latest synchronization. Based on result of this comparison old record is updated on the side of MySQL database.
+Optimization of synchronization is based on storing "last updated" property of object from hubspot API. This timestamp is compared with the timestamp of latest synchronization. Based on result of this comparison old record is updated on the side of MySQL database. Synchronization is however slowed by inefficient way of comparing contact - ticket assosications. 
 
 MySQL database named uses three tables with following schemas:
 
@@ -75,30 +75,28 @@ USE hubspot;
 DESCRIBE contacts;
 ```
 
-+-------------+--------------+------+-----+---------+----------------+
-| Field       | Type         | Null | Key | Default | Extra          |
-+-------------+--------------+------+-----+---------+----------------+
-| id          | int(11)      | NO   | PRI | NULL    | auto_increment |
-| contact_id  | int(11)      | NO   | UNI | NULL    |                |
-| firstname   | varchar(300) | NO   |     | NULL    |                |
-| lastname    | varchar(300) | NO   |     | NULL    |                |
-| email       | varchar(300) | YES  |     | NULL    |                |
-| phone       | varchar(300) | YES  |     | NULL    |                |
-| create_date | varchar(300) | NO   |     | NULL    |                |
-+-------------+--------------+------+-----+---------+----------------+
++-------------+--------------+------+-----+---------+-------+
+| Field       | Type         | Null | Key | Default | Extra |
++-------------+--------------+------+-----+---------+-------+
+| contact_id  | int(11)      | NO   | PRI | NULL    |       |
+| firstname   | varchar(300) | NO   |     | NULL    |       |
+| lastname    | varchar(300) | NO   |     | NULL    |       |
+| email       | varchar(300) | YES  |     | NULL    |       |
+| phone       | varchar(300) | YES  |     | NULL    |       |
+| create_date | varchar(300) | NO   |     | NULL    |       |
++-------------+--------------+------+-----+---------+-------+
 
 ```text
 DESCRIBE tickets;
 ```
 
-+-----------+--------------+------+-----+---------+----------------+
-| Field     | Type         | Null | Key | Default | Extra          |
-+-----------+--------------+------+-----+---------+----------------+
-| id        | int(11)      | NO   | PRI | NULL    | auto_increment |
-| ticket_id | int(11)      | NO   | UNI | NULL    |                |
-| content   | varchar(300) | YES  |     | NULL    |                |
-| owner_id  | int(11)      | YES  |     | NULL    |                |
-+-----------+--------------+------+-----+---------+----------------+
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| ticket_id | int(11)      | NO   | PRI | NULL    |       |
+| content   | varchar(300) | YES  |     | NULL    |       |
+| owner_id  | int(11)      | YES  |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
 
 ```text
 DESCRIBE synchronizations;
@@ -116,3 +114,15 @@ DESCRIBE synchronizations;
 | deleted_contacts     | int(100)     | YES  |     | NULL    |                |
 | updated_contacts     | int(100)     | YES  |     | NULL    |                |
 +----------------------+--------------+------+-----+---------+----------------+
+
+```text
+DESCRIBE contacttickets;
+```
+
++------------+---------+------+-----+---------+----------------+
+| Field      | Type    | Null | Key | Default | Extra          |
++------------+---------+------+-----+---------+----------------+
+| id         | int(11) | NO   | PRI | NULL    | auto_increment |
+| contact_id | int(11) | YES  |     | NULL    |                |
+| ticket_id  | int(11) | YES  |     | NULL    |                |
++------------+---------+------+-----+---------+----------------+

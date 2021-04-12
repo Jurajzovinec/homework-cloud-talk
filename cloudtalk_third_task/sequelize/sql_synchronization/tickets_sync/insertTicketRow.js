@@ -11,8 +11,8 @@ const insertTicketRow = async (ticketObject) => {
     };
 
     const ticket = await Ticket.create(ticketObjectEditedForSQL)
-        .catch((error) => {
-            throw new Error(error);
+        .catch(error => {
+            throw error;
         });
 
     return ticket;

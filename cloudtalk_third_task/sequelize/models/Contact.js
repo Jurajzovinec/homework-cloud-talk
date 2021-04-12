@@ -1,20 +1,20 @@
 const Sequelize = require("sequelize");
 const sequelize = require("../connectionToDatabase");
 
-const Ticket = require("./Ticket");
-
 const Contact = sequelize.define("Contact", {
-
+    /*
     id: {
         type: Sequelize.INTEGER(11),
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
     },
+    */
     contact_id: {
         type: Sequelize.INTEGER(11),
         allowNull: false,
-        unique: true
+        unique: true,
+        primaryKey: true,
     },
     firstname: {
         type: Sequelize.STRING(300),
@@ -37,7 +37,5 @@ const Contact = sequelize.define("Contact", {
 }, {
     timestamps: false
 });
-
-// Contact.belongsToMany(Ticket, { through: 'ContactTickets' });
 
 module.exports = Contact;

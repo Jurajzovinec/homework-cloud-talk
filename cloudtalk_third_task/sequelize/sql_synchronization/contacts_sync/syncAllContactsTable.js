@@ -28,6 +28,7 @@ const syncAllContacts = async (lastSynchronizationDate) => {
         }
 
         if (!alreadyStoredContactIds.includes(contactObject.contactId)) {
+            console.log(contactObject.contactId);
             insertContactRow(contactObject);
             added_contacts++;
         }

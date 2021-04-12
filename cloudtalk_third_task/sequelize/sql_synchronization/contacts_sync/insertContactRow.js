@@ -1,5 +1,4 @@
 const Contact = require("../../models/Contact");
-const createRelationContactTickets = require("./createRelationContactTickets");
 
 const insertContactRow = async (contactObject) => {
 
@@ -18,8 +17,6 @@ const insertContactRow = async (contactObject) => {
         .catch((error) => {
             throw error;
         });
-
-    await createRelationContactTickets(contact, contactObject.contactAssociationsTickets);
 
     return contact;
 };

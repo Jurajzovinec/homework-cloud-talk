@@ -10,16 +10,18 @@ const ContactTickets = sequelize.define("ContactTickets", {
         autoIncrement: true,
         primaryKey: true,
     },
-    ContactId:{
+    contact_id:{
         type: Sequelize.INTEGER(11),
+        
     },
-    TicketId:{
+    ticket_id:{
         type: Sequelize.INTEGER(11),
     }
 }, {
     timestamps: false
 });
 
-Contact.belongsToMany(Ticket, { through: 'ContactTickets' });
+Contact.belongsToMany(Ticket, { through: 'ContactTickets', foreignKey:'contact_id' });
+Ticket.belongsToMany(Contact, { through: 'ContactTickets', foreignKey:'ticket_id' });
 
 module.exports = ContactTickets;

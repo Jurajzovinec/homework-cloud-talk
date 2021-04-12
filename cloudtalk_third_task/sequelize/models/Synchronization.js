@@ -1,8 +1,6 @@
 const Sequelize = require("sequelize");
 
-
-
-module.exports = sequelize.define("Synchronization", {
+const Synchronization = sequelize.define("Synchronization", {
     id: {
         type: Sequelize.INTEGER(11),
         allowNull: false,
@@ -34,3 +32,6 @@ module.exports = sequelize.define("Synchronization", {
 }, {
     timestamps: false
 });
+
+
+module.exports =Synchronization;

@@ -19,8 +19,6 @@ const deleteAllTickets = async () => {
 
 };
 
-// deleteAllTickets();
-
 module.exports = deleteAllTickets;
 
 

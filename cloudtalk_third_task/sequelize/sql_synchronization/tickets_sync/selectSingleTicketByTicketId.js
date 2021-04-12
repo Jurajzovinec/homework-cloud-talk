@@ -2,17 +2,16 @@ const Ticket = require('../../models/Ticket');
 
 const selectSingleTicketByTicketId = async (ticketId) => {
 
-    const selectedTicket = Ticket.findOne({
-        where: {
-            ticket_id: ticketId
-        }
-    })
-
-        .catch((error) => {
-            throw new Error(error);
+    const selectedTicket = await Ticket.findOne(
+        {
+            where: {
+                ticket_id: ticketId
+            }
+        }).catch(error => {
+            throw error;
         });
 
-    return await selectedTicket;
+    return selectedTicket;
 
 };
 
