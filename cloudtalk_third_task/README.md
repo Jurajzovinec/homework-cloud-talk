@@ -69,11 +69,8 @@ MySQL database named uses three tables with following schemas:
 
 ```text
 USE hubspot;
-```
 
-```text
 DESCRIBE contacts;
-```
 
 +-------------+--------------+------+-----+---------+-------+
 | Field       | Type         | Null | Key | Default | Extra |
@@ -86,9 +83,7 @@ DESCRIBE contacts;
 | create_date | varchar(300) | NO   |     | NULL    |       |
 +-------------+--------------+------+-----+---------+-------+
 
-```text
 DESCRIBE tickets;
-```
 
 +-----------+--------------+------+-----+---------+-------+
 | Field     | Type         | Null | Key | Default | Extra |
@@ -98,9 +93,7 @@ DESCRIBE tickets;
 | owner_id  | int(11)      | YES  |     | NULL    |       |
 +-----------+--------------+------+-----+---------+-------+
 
-```text
 DESCRIBE synchronizations;
-```
 
 +----------------------+--------------+------+-----+---------+----------------+
 | Field                | Type         | Null | Key | Default | Extra          |
@@ -115,9 +108,7 @@ DESCRIBE synchronizations;
 | updated_contacts     | int(100)     | YES  |     | NULL    |                |
 +----------------------+--------------+------+-----+---------+----------------+
 
-```text
 DESCRIBE contacttickets;
-```
 
 +------------+---------+------+-----+---------+----------------+
 | Field      | Type    | Null | Key | Default | Extra          |
@@ -126,3 +117,5 @@ DESCRIBE contacttickets;
 | contact_id | int(11) | YES  |     | NULL    |                |
 | ticket_id  | int(11) | YES  |     | NULL    |                |
 +------------+---------+------+-----+---------+----------------+
+
+```
