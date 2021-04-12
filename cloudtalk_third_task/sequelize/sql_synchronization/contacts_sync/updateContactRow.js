@@ -14,7 +14,6 @@ const updateContactRow = async (contactObject) => {
     
     selectedContact.update(ticketObjectEditForSQL).catch(error=>{throw error;});
 
-
 };
 
 module.exports = updateContactRow;
