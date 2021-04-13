@@ -1,0 +1,20 @@
+[
+    "Add: generateRandomInputValue.",
+    "Add: Throw error if N constraint is not satisfied.",
+    "Enhance: Classification of homework objetcs.",
+    "Rework: Implement Summed Area table algorithm.",
+    "Add: main.js to controll whole proccess of Yield summarization.",
+    "Edit: Cleanse of exampleValues. Remove redundant variables.",
+    "Edit: Note solution into README.md",
+    "Edit: Add setup instructions to README.",
+    "Edit: Linebreaks in README.",
+    "Fixed: Remove coverage jest folder from git repo.",
+    "Add: Class that provides memory usage of app.",
+    "Add: results of space complexity.",
+    "Update: README add code snippet.",
+    "Update: Edit JS Code snippet.",
+    "Rename: src folder to yield_field.",
+    "Rework: Divide homework tasks into folders.",
+    "Add: Readme file to third task.",
+    "Add main.test.js"
+]
