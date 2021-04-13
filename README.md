@@ -39,5 +39,8 @@ $ npm run start-second-task
 
 3. Solution in progress
 
-
+```text
+$ npm run start-third-task-periodic
+$ npm run start-third-task-constant
+```
 

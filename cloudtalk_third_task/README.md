@@ -59,8 +59,8 @@ My solution is divided into two ways of running synchronization
 2. Constant - where synchronization is initiated immediately after previous synchornization finishes.
 
 ```text
-npm run start-third-task-periodic
-npm run start-third-task-constant
+$ npm run start-third-task-periodic
+$ npm run start-third-task-constant
 ```
 
 Optimization of synchronization is based on storing "last updated" property of object from hubspot API. This timestamp is compared with the timestamp of latest synchronization. Based on result of this comparison old record is updated on the side of MySQL database. However, synchronization is slowed by inefficient way of comparing contact - ticket assosications with previous stored data. 
