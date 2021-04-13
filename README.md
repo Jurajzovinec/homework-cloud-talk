@@ -37,7 +37,7 @@ $ npm run start-first-task
 $ npm run start-second-task
 ```
 
-3. Solution in progress
+3. Solution for third task
 
 ```text
 $ npm run start-third-task-periodic
