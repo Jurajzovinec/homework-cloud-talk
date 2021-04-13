@@ -52,7 +52,7 @@ Useful links:
 
 # My solution
 
-My solution is divided into to ways of running synchronization
+My solution is divided into two ways of running synchronization
 
 1. Periodic - where synchronization is initiated every 10 mins. 
 
